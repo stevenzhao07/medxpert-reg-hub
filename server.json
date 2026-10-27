@@ -3,7 +3,7 @@
   "name": "io.github.stevenzhao07/medxpert-reg-hub",
   "title": "MedXpert Regulatory Hub",
   "description": "Read-only medical device regulatory data: NMPA UDI, FDA 510(k)/PMA/classification lookups.",
-  "version": "2.0.1",
+  "version": "2.0.2",
   "websiteUrl": "https://medxpert.cn",
   "repository": {
     "url": "https://github.com/stevenzhao07/medxpert-reg-hub",
@@ -15,7 +15,7 @@
     {
       "registryType": "pypi",
       "identifier": "medxpert-reg-hub",
-      "version": "2.0.1",
+      "version": "2.0.2",
       "registryBaseUrl": "https://pypi.org",
       "transport": { "type": "stdio" },
       "environmentVariables": [
