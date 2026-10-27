@@ -1,3 +1,8 @@
+---
+title_en: Technical Files: STED / CTD
+summary_en: STED structure, CTD approach and writing points per module for the technical documentation.
+---
+
 ﻿# 技术文件STED撰写枢纽
 
 > 医疗器械注册工程师资料枢纽 · 由 WorkBuddy 生成，链接均指向官方源，点击可直达。

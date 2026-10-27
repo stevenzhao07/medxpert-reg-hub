@@ -1,3 +1,8 @@
+---
+title_en: CN Contract Manufacturing (MAH)
+summary_en: Registration-holder entrustment: prohibited list (2022 No.17), quality agreement (No.20 guideline), cross-region coordination and responsibility split.
+---
+
 # 中国医疗器械委托生产（注册人制度）实务
 
 > 原创整理，依据公开官方法规：《医疗器械监督管理条例》（国务院令739号）第三十四条、国家药监局2022年第17号通告（禁止委托生产目录）、2022年第20号通告（委托生产质量协议编制指南）、药监综械管〔2022〕21号（跨区域协同监管意见）。**以 NMPA 官方原文为准。**

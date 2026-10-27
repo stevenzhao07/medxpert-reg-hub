@@ -1,3 +1,8 @@
+---
+title_en: Labeling & Instructions for Use
+summary_en: Label elements, IFU writing and multilingual requirements.
+---
+
 ﻿# 标签与 IFU 枢纽
 
 标签（Label）和说明书（IFU/Instructions for Use）是产品合规交付的最后一道。本枢纽汇总中国局令 6 号、欧盟 MDCG 2019-15、ISO 15223-1（符号）、ISO 20417（信息提供）、ISO/TC 198（灭菌）的官方入口，全部可点击直达。适用于注册、法规、质量岗位。

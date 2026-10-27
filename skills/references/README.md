@@ -1,3 +1,8 @@
+---
+title_en: References Index (Navigation)
+summary_en: Navigation index mapping question types to the 28+ reference hub files.
+---
+
 # 医械注册工程师·全球通关枢纽 — 参考素材索引
 
 本目录为技能 `medxpert-reg-hub` 的参考素材（全部为已核验的官方资料直达整理，源自实际注册项目沉淀）。

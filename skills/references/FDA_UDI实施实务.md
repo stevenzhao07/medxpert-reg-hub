@@ -1,3 +1,8 @@
+---
+title_en: FDA UDI Implementation
+summary_en: DI+PI structure, three issuing agencies, class-based compliance dates and GUDID per 21 CFR 830/801.20.
+---
+
 # FDA UDI 实施实务
 
 > 原创整理，依据公开官方法规：FDA《UDI 最终规则》（2013）、21 CFR Part 830（标签）、801.20（UDI 呈现）、GUDID。**合规日期以 FDA 官方当前发布为准。**

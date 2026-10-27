@@ -1,3 +1,8 @@
+---
+title_en: GMP / Quality System & Validation
+summary_en: GMP and ISO 13485 systems, process validation and reprocessing validation.
+---
+
 ﻿# GMP / 质量体系与验证枢纽
 
 无菌 / 植入 / 复用器械的注册绕不开质量体系与过程验证。本枢纽汇总中国 GMP 附录、ISO 13485 / 14971、FDA 过程验证、PIC/S、洁净室 ISO 14644、清洁与再处理验证的官方入口，全部可点击直达。适用于质量、注册、验证岗位。

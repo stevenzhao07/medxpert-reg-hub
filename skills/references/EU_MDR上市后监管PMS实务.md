@@ -1,3 +1,8 @@
+---
+title_en: EU MDR Post-Market Surveillance
+summary_en: Art.83-92 framework, PSUR frequency, trend reporting and FSCA per MDR 2017/745 and MDCG 2022-21.
+---
+
 # EU MDR 上市后监管（PMS）实务
 
 > 原创整理，依据公开官方法规：Regulation (EU) 2017/745 (MDR) Chapter VII（Article 83-92）、Annex III（PMS 技术文档）、MDCG 2022-21（PSUR 指南）。**具体要求以官方原文为准。**

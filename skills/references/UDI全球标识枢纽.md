@@ -1,3 +1,8 @@
+---
+title_en: Global UDI (Unique Device Identification)
+summary_en: UDI rules across CN/US/EU, issuing agencies (GS1/HIBCC/ICCBBA) and public databases.
+---
+
 ﻿# UDI全球标识枢纽
 
 > 医疗器械注册工程师资料枢纽 · 由 WorkBuddy 生成，链接均指向官方源，点击可直达。

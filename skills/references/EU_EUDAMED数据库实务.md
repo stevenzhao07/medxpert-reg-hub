@@ -1,3 +1,8 @@
+---
+title_en: EUDAMED Database Practice
+summary_en: Six modules, mandatory modules from 2026-05-28, SRN registration obligations per MDR/IVDR and Reg 2024/1860.
+---
+
 # EUDAMED 欧盟医疗器械数据库实务
 
 > 原创整理，依据公开官方法规：Regulation (EU) 2017/745 (MDR)、2017/746 (IVDR)、Regulation (EU) 2024/1860（渐进式上线）、Commission Decision (EU) 2025/2371（**待核实**：未在 EC 官网确认该决定号；核验方法 = EC 官网 EUDAMED『Latest updates』或 EUR-Lex 检索 2025/2371）（OJEU 2025-11-27）。**强制日期与模块状态以欧盟委员会官方当前发布为准。**
