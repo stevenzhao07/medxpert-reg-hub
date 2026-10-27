@@ -1,0 +1,36 @@
+# medxpert-gate —— 机器强制门禁（medxpert-reg-hub）
+# 阻塞式 required status check：任何合并/推送前本工作流必须跑出绿勾。
+# 设计同 lgd-ci-gate v2：①selftest 负对照（自证门能失败）；②真检查——
+# 必备文件 / README 展示层锚点（求星横幅·语言锚点·动态徽章·LGD回链·Why段）/
+# EVALUATION 证据 / 相对链接可解析 / 双语完整性。
+# 零外部 action 依赖：不引用 actions/checkout，用 tarball API 取源。
+name: medxpert-gate
+on:
+  pull_request:
+    branches: ["main", "master"]
+  push:
+    branches: ["main", "master"]
+
+jobs:
+  medxpert-gate:
+    name: medxpert-gate
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - name: "Fetch source tarball (no actions/checkout)"
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          REPO: ${{ github.repository }}
+          SHA: ${{ github.sha }}
+        run: |
+          curl -sSL --fail -H "Authorization: Bearer $GH_TOKEN" \
+            "$GITHUB_API_URL/repos/$REPO/tarball/$SHA" -o /tmp/src.tgz
+          mkdir -p /tmp/src && tar -xzf /tmp/src.tgz -C /tmp/src --strip-components=1
+          echo "source tree ready: $(find /tmp/src -type f | wc -l) files"
+
+      - name: Selftest — prove the gate can fail (negative control)
+        run: python3 /tmp/src/tools/medxpert_gate_check.py selftest
+
+      - name: Real checks (files / README anchors / evidence / links / bilingual)
+        run: python3 /tmp/src/tools/medxpert_gate_check.py check --root /tmp/src
