@@ -16,7 +16,7 @@ REQUIRED_FILES = [
     "LICENSE",
     "llms.txt",
 ]
-REQUIRED_DIRS = ["EVALUATION", "docs", "references", "assets"]
+REQUIRED_DIRS = ["EVALUATION", "docs", "assets", "skills", "mcp", "bin", "tools"]
 
 # README 锚点（展示层三件套 + 内容完备性）
 README_ANCHORS = [
@@ -53,6 +53,11 @@ def check_root(root):
             fail(f"missing required dir: {d}")
     if not os.listdir(os.path.join(root, "EVALUATION")):
         fail("EVALUATION dir is empty")
+    # skills/ 技能包结构（SKILL.md + references/）
+    if not os.path.isfile(os.path.join(root, "skills", "SKILL.md")):
+        fail("missing skills/SKILL.md")
+    if not os.path.isdir(os.path.join(root, "skills", "references")):
+        fail("missing skills/references")
     # LICENSE 含 MIT
     lic = open(os.path.join(root, "LICENSE"), encoding="utf-8", errors="replace").read()
     if "MIT" not in lic:

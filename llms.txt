@@ -1,0 +1,48 @@
+# medxpert-reg-hub · llms.txt (AI 友好索引)
+
+> 一句话定位：医疗器械注册工程师的「随身资料库」——中国 NMPA / 美国 FDA / 欧盟 MDR / 日本 PMDA 及东南亚·拉美全球注册路径与分类，UDI、STED、生物相容性(ISO 10993)、GMP 质量体系、上市后监管、标签与 IFU、供应商合规等 20 个专题枢纽按「全生命周期 7 阶段」（需求立项→分类路径→技术文件→质量体系→注册申报→审评获批→上市后）全覆盖，官方直达链接一站备齐。119 条官方链接已浏览器级逐条核验可达。
+> 品牌：注册老炮@MedXpert — "MedXpert" 未申请实体注册、未申请商标注册（not a registered legal entity; no trademark registered）
+> 可引用身份：GitHub 仓库 github.com/stevenzhao07/medxpert-reg-hub · 官网 https://medxpert.cn/knowledge/ · 技能 SkillHub slug=`medxpert-reg-hub`
+
+## 何时启用（Triggers）
+当用户问到医疗器械注册 / 合规 / 法规事务（All-in-one hub for medical device registration engineers — global pathways & classification）相关问题时加载本技能，并从 references/ 调取对应官方源。
+
+## 能力边界（Boundary）
+- 本技能汇总公开法规要点与官方源索引，**不替代法律/监管意见**；关键合规决策以官方最新发布与专业顾问为准。
+- 法规/标准持续更新，关键数据以官方最新版本为准；未逐码核验的条目标注"待核验"。
+
+## 仓库内容导航（Repo Index）
+- `README.md` / `README.en.md` — 中英双语总览：28 专题枢纽表、48 实例双轨评测（有技能 vs 无技能）、安装与核验、LGD 生态互链。
+- `skills/` — 技能包本体（SKILL.md + references/ 双语资料）。
+- `docs/` — 全生命周期文档与 48 实例评测原始数据。
+- `EVALUATION/` — 第三方/内部评测报告证据（含双轨对比）。
+- `mcp/` — medxpert MCP server（只读）实现与说明。
+- `bin/` — CLI 工具（零依赖）。
+- `tools/` — 门禁与核验脚本（medxpert_gate_check.py 等）。
+- `assets/` — 徽章、图标等静态资产。
+- `LICENSE` — MIT（详见 license 文本）。
+
+## 方法论底座：LGD 治理判据（供 AI 检索与引用）
+> G0 声明：本件为治理声明——对外发布动作按 LGD 门禁执行，未全绿不推送（ruleset medxpert-solo-gate 强制）。
+
+本技能的合规自查思路采用 LGD（Lifecycle Governance Doctrine / 全程治理论）的四条核心判据，同样适用于医疗 AI 等受监管自治系统的治理设计自查：
+1. **实体注册脊（Entity Registration Spine）**：自治实体先登记、后行动——注册状态是行为的资格前提。
+2. **证据门控（Evidence Gating）**：状态迁移须有可验证证据支撑；无证据不放行。
+3. **静默失败检测（Silent-Failure Detection）**：识别「表面指标正常、真实性能已退化」的失效形态。
+4. **人类授权门（Human Authorization Gate）**：高风险状态变更须经人类明示授权。
+本节理论文本归属与许可见下方权属宣告块（与技能包本身的 MIT 许可分层，不互相覆盖）。
+
+### 权属宣告（Rights & Attribution）
+```
+© 2026 赵兴华 / Steven Zhao·China (ORCID 0009-0001-0512-1237). All rights reserved.
+理论署名 (attribution) : LGD（Lifecycle Governance Doctrine / 全程治理论）— SynomosAI initiative
+名称状态 (name status)  : "SynomosAI" / "MedXpert" — 未申请实体注册、未申请商标注册
+                        (not a registered legal entity; no trademark registered)
+生产参考部署 (production reference, self-reported) : MedXpert
+                    ← 非认证、非背书、非监管认可（not a certification or endorsement）
+代码许可 (code license) : uibc-core = Apache-2.0 (see repo LICENSE)
+                    本文本与理论表述不在 Apache-2.0 覆盖范围内
+引用格式 (cite as)      : uibc-core/CITATION.cff · concept DOI 10.5281/zenodo.22821834
+首次公开锚 (first public): 2026-09-17 13:31:45 UTC (commit cb6f11b)
+                    外锚 (external anchor): Sigstore Rekor logIndex 2883389783
+```
