@@ -1,0 +1,46 @@
+name: Publish PyPI
+
+# Trusted Publishing（OIDC 零 token）：GitHub Release 发布时自动推 PyPI。
+# 一次性配置（Steven 本人，PyPI → Account → Publishing → Add a pending publisher）：
+#   Project name: medxpert-reg-hub | Owner: stevenzhao07 | Repository name: medxpert-reg-hub
+#   Workflow name: publish-pypi.yml | Environment name: pypi
+
+on:
+  release:
+    types: [published]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  id-token: write
+
+concurrency:
+  group: publish-pypi-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    environment: pypi
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Build wheel from mcp/
+        working-directory: mcp
+        run: |
+          python -m pip install --upgrade pip
+          python -m pip install build
+          python -m build --sdist --wheel
+
+      - name: Publish to PyPI (Trusted Publishing)
+        uses: pypa/gh-action-pypi-publish@release/v1
+        with:
+          packages-dir: mcp/dist
+          print-hash: true
