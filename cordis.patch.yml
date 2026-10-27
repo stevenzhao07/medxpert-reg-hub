@@ -1,0 +1,8 @@
+# DSH bundle patch — 把 medxpert-reg-hub 注册为 DeepSeek Harness 插件。
+# 插件提供两个只读工具：medxpert_quick_ref（关键词速查）与 medxpert_check_links（官方链接核验），
+# 数据来自包内 skills/references（20 枢纽知识库）。
+- insert:
+    - id: medxpert-reg-hub
+      name: medxpert-reg-hub
+      config:
+        skillsDir: skills

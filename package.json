@@ -1,0 +1,37 @@
+{
+  "name": "medxpert-reg-hub",
+  "version": "2.0.1",
+  "description": "医疗器械全球注册合规技能聚合包：20 大枢纽 + 48 实例双轨实测，中/美/欧/日多市场分类与路径速查，附官方链接。Agent Skills 标准格式，Claude/Codex/Cursor/DSH/千问/Kimi/智谱 原生加载。",
+  "keywords": [
+    "medical-device", "regulatory", "NMPA", "FDA", "MDR", "510k", "PMA",
+    "EUDAMED", "PMDA", "UDI", "ISO-13485", "skill", "agent-skill", "dsh-plugin"
+  ],
+  "license": "MIT",
+  "author": "注册老炮 (MedXpert) <medxpert.cn>",
+  "bin": {
+    "medxpert": "bin/medxpert.js"
+  },
+  "files": [
+    "skills",
+    "bin",
+    "src",
+    "README.md",
+    "LICENSE.md",
+    "cordis.patch.yml",
+    "screenshots.json"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  },
+  "peerDependencies": {
+    "@deepseek-ai/dsh-tools": ">=0.1.0-rc.1 <0.1.0 || >=0.1.0-rc.1 <0.2.0-0"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
