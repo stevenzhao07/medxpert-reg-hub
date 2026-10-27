@@ -1,0 +1,2008 @@
+[
+  {
+    "product": "超声手术刀系统",
+    "category": "01 有源手术器械",
+    "catalog_code": "01-01（待核验具体条目）",
+    "is_ai_case": false,
+    "skill_answer": {
+      "classification": "三类（初判：有源、输出能量治疗设备）",
+      "path": "三类→国家药监局注册；SOP-1 五步：立项分类→技术文件（STED）→注册检验（委托CMA或自检2021年第126号）→质量体系（GMP/ISO13485+体系核查）→eRPS递交（2021年第15号通告）；临床评价按免临床目录/同品种比对/临床试验三路径核对",
+      "basis": "《分类判定速查》《注册工程师资料枢纽》《注册检验与申报实操枢纽》《GMP质量体系与验证枢纽》《技术文件STED撰写枢纽》《临床评价枢纽》",
+      "links": [
+        "https://www.nmpa.gov.cn/xxgk/ggtg/ylqxggtg/ylqxqtggtg/20170904150301406.html",
+        "https://www.nmpa.gov.cn/"
+      ],
+      "boundary_note": "品名举例/管理类别以《分类目录》(2017) 01-01 及2023年第101号公告为准；附件刀头/无菌/功能组成差异影响类别与临床路径；FDA按21 CFR另行核定（超声手术吸引器product code LFL）；本结论为初判，不构成法规意见"
+    },
+    "plain_answer": {
+      "summary": "能给出超声手术刀属第三类（检索命中NMPA 6823超声手术及聚焦治疗设备Ⅲ类目录页与2023年101号公告），但对01-01具体条目、附件刀头调整、注册路径各环节（型检/体系核查/eRPS）、临床评价三路径覆盖不足，多停留在高风险需临床层面，无结构化证据链",
+      "basis_level": "官方检索",
+      "queries": [
+        "超声手术刀系统 医疗器械分类 几类 注册"
+      ]
+    },
+    "five_scores": {
+      "skill": {
+        "correctness": 5,
+        "traceability": 5,
+        "coverage": 5,
+        "boundary_timeliness": 5,
+        "pitfall_identification": 5
+      },
+      "plain": {
+        "correctness": 4,
+        "traceability": 2,
+        "coverage": 2,
+        "boundary_timeliness": 1,
+        "pitfall_identification": 2
+      }
+    },
+    "verdict": "分类主线无差异，但技能侧在注册路径全链、证据链溯源、边界诚实标注上显著领先；无技能侧在附件/无菌/功能组成等边界细节存在误判风险。技能增益：中高",
+    "gain": "中高"
+  },
+  {
+    "product": "AI辅助肺结节筛查软件",
+    "category": "21 医用软件",
+    "catalog_code": "21-04-02（辅助决策，待官方目录核实）",
+    "is_ai_case": true,
+    "skill_answer": {
+      "classification": "三类（辅助决策类SaMD）——分水岭：是否辅助决策；提供病灶特征识别/病变性质判定→三类，仅标注/测量/显示/传输等参考信息→二类，按《人工智能医用软件产品分类界定指导原则》(2021年第47号)确认",
+      "path": "三类→国家局注册；软件生命周期IEC 62304（A/B/C安全等级）、网络安全（威胁建模/SBOM/漏洞管理，MDCG 2019-16、FDA网络安全指南）、软件文档清单（描述文档/SRS/架构/SOUP/测试/缺陷/版本变更）；辅助诊断决策软件一般需临床评价（真实世界数据等），按临床评价三路径与审评口径核对",
+      "basis": "《软件人因枢纽》《分类判定速查》《临床评价枢纽》",
+      "links": [
+        "https://www.cmde.org.cn/",
+        "https://www.nmpa.gov.cn/",
+        "https://www.imdrf.org/documents",
+        "https://health.ec.europa.eu/medical-devices-sector/new-regulations/guidance-mdcg-endorsed-documents-and-other-guidance_en",
+        "https://www.fda.gov/regulatory-information/search-fda-guidance-documents"
+      ],
+      "boundary_note": "编码21-04-02（辅助决策）vs 21-02-02（非辅助决策）以官方目录为准；算法成熟度低+辅助决策→三类、成熟+仅参考→二类须按47号指导原则逐条核对；CMDE已公开肺结节CT影像辅助检测软件审评报告（第三类，创新通道）实证；边界产品走分类界定"
+    },
+    "plain_answer": {
+      "summary": "多数能答AI辅助诊断软件属三类（检索命中CMDE审评报告、北京300问、贵州分类界定问答、广东CT影像AI课题文件），但普遍不系统：说不出21-02-02/21-04-02编码分水岭、不主动给出算法成熟度+是否辅助决策的边界逻辑、对软件生命周期/网络安全/SBOM申报要求覆盖缺失、官方链接零散无证据链",
+      "basis_level": "官方检索",
+      "queries": [
+        "AI辅助肺结节筛查软件 医疗器械 分类 三类 二类"
+      ]
+    },
+    "five_scores": {
+      "skill": {
+        "correctness": 5,
+        "traceability": 5,
+        "coverage": 5,
+        "boundary_timeliness": 5,
+        "pitfall_identification": 5
+      },
+      "plain": {
+        "correctness": 3,
+        "traceability": 2,
+        "coverage": 2,
+        "boundary_timeliness": 1,
+        "pitfall_identification": 2
+      }
+    },
+    "verdict": "最典型三类vs二类误判场景；技能侧给出判定分水岭+官方指导原则+完整软件申报面（生命周期/网络安全/临床）；无技能侧只能答三类，无法支撑申报决策。技能增益：高",
+    "gain": "高"
+  },
+  {
+    "product": "血糖仪（便携式）",
+    "category": "22 临床检验器械",
+    "catalog_code": "22-02（待核验具体条目）",
+    "is_ai_case": false,
+    "skill_answer": {
+      "classification": "二类（IVD配套器械，监测用）",
+      "path": "二类→境内省局注册，进口二类→国家局；血糖仪与配套试纸（IVD试剂）分别管理；临床评价按二类常规三路径（免临床目录/同品种/临床试验）",
+      "basis": "《分类判定速查》《注册工程师资料枢纽》《注册检验与申报实操枢纽》《临床评价枢纽》",
+      "links": [
+        "https://www.nmpa.gov.cn/",
+        "https://www.nmpa.gov.cn/xxgk/ggtg/ylqxggtg/ylqxqtggtg/20170904150301406.html"
+      ],
+      "boundary_note": "便携式家用血糖仪二类；持续葡萄糖监测系统（CGM，含植入式传感器/实时监测）等变体类别与路径须逐条核对目录/分类界定→待核验；含嵌入式软件/无线传输时叠加软件与人因要求"
+    },
+    "plain_answer": {
+      "summary": "血糖仪二类（正确，检索命中CMDE审评报告、省级注册信息页、FDA 21 CFR 862.1345 Class II）；但普遍不分便携式家用vs动态监测CGM边界、不说明仪器与试剂分开管理、不给省局/国家局（进口）注册路径差异、无证据链",
+      "basis_level": "官方检索",
+      "queries": [
+        "血糖仪 医疗器械 分类 二类 注册"
+      ]
+    },
+    "five_scores": {
+      "skill": {
+        "correctness": 5,
+        "traceability": 5,
+        "coverage": 5,
+        "boundary_timeliness": 5,
+        "pitfall_identification": 5
+      },
+      "plain": {
+        "correctness": 4,
+        "traceability": 2,
+        "coverage": 2,
+        "boundary_timeliness": 1,
+        "pitfall_identification": 2
+      }
+    },
+    "verdict": "类别简单但无技能侧覆盖浅、边界缺失；技能侧给出速查结论+注册路径+仪器与试剂分开管理+CGM变体待核验标注。技能增益：中",
+    "gain": "中"
+  },
+  {
+    "product": "高频电刀（高频手术设备）",
+    "category": "01 有源手术器械",
+    "catalog_code": "01-03-01",
+    "is_ai_case": false,
+    "skill_answer": {
+      "classification": "三类。有源输出能量治疗设备（高频电流切割/凝血），目录 01-03-01 高频手术设备，省审评口径管理类别Ⅲ",
+      "path": "三类国家局注册：技术文件→注册检验（CMA委托或自检126号）→GMP体系核查→eRPS递交（121号/15号通告）；IEC 60601-1/60601-2-2；临床评价按免临床目录(2025年版1047项)/同品种/临床试验三路径核对",
+      "basis": "《分类判定速查》《注册工程师资料枢纽》《注册检验与申报实操枢纽》《临床评价枢纽》《GMP质量体系与验证枢纽》",
+      "links": [
+        "https://www.nmpa.gov.cn/xxgk/ggtg/ylqxggtg/ylqxqtggtg/20170904150301406.html",
+        "https://yjj.hebei.gov.cn/hebcmde/content/1443",
+        "https://www.cmde.org.cn/sqrzc/zxfw/lcjtcn/lcjtzcsb/index.html",
+        "https://www.nmpa.gov.cn/xxgk/ggtg/ylqxggtg/ylqxqtggtg/20250513095643145.html"
+      ],
+      "boundary_note": "⚠️ 主机与附件（一次性电极/中性电极）品名举例与无菌状态差异影响类别与临床路径；频率/功率宣称影响技术要求；以官方最新目录与公告为准"
+    },
+    "plain_answer": {
+      "summary": "能答高频电刀属第三类（命中河北省审评中心Ⅲ类页与NMPA旧6825目录页），但说不出01-03-01条目编码，注册路径各环节与IEC 60601-2-2专用标准覆盖零散，无证据链",
+      "basis_level": "官方检索",
+      "queries": [
+        "高频电刀 医疗器械 分类 注册 三类"
+      ]
+    },
+    "five_scores": {
+      "skill": {
+        "correctness": 5,
+        "traceability": 5,
+        "coverage": 5,
+        "boundary_timeliness": 5,
+        "pitfall_identification": 5
+      },
+      "plain": {
+        "correctness": 4,
+        "traceability": 2,
+        "coverage": 2,
+        "boundary_timeliness": 1,
+        "pitfall_identification": 2
+      }
+    },
+    "verdict": "分类主线一致（三类），差异在条目编码、专用标准与注册全链覆盖。技能增益：中高。",
+    "gain": "中高"
+  },
+  {
+    "product": "一次性使用无菌手术刀片",
+    "category": "02 无源手术器械",
+    "catalog_code": "02-01-01",
+    "is_ai_case": false,
+    "skill_answer": {
+      "classification": "二类（无菌提供）。无源器械无菌提供切割软组织→二类主线；02-01-01 一次性使用手术刀片，省审评口径Ⅱ类",
+      "path": "二类省局注册：技术要求+注册检验+临床评价（免临床目录核对/同品种）+体系核查；无菌产品叠加灭菌确认（ISO 11135/11137）与无菌屏障包装（ISO 11607）",
+      "basis": "《分类判定速查》《注册工程师资料枢纽》《灭菌包装验证枢纽》《临床评价枢纽》",
+      "links": [
+        "https://yjj.hebei.gov.cn/hebcmde/content/1463",
+        "https://www.nmpa.gov.cn/xxgk/ggtg/ylqxggtg/ylqxqtggtg/20170904150301406.html",
+        "https://www.nmpa.gov.cn/ylqx/ylqxfgwj/ylqxbmgzh/20150714120001554.html"
+      ],
+      "boundary_note": "⚠️ 非无菌可重复使用手术刀片/刀柄按重复使用手术器械多归一类（市局备案）——无菌状态直接翻转类别，条件备注必须带上"
+    },
+    "plain_answer": {
+      "summary": "多数能答一次性手术刀片二类（命中河北省审评中心Ⅱ类页与15号令分类规则），但不点明无菌vs复用的类别翻转条件，不覆盖灭菌确认/无菌包装要求，不分省局注册与市局备案路径",
+      "basis_level": "官方检索",
+      "queries": [
+        "一次性无菌手术刀片 医疗器械 分类 注册"
+      ]
+    },
+    "five_scores": {
+      "skill": {
+        "correctness": 5,
+        "traceability": 5,
+        "coverage": 5,
+        "boundary_timeliness": 5,
+        "pitfall_identification": 5
+      },
+      "plain": {
+        "correctness": 4,
+        "traceability": 2,
+        "coverage": 2,
+        "boundary_timeliness": 1,
+        "pitfall_identification": 2
+      }
+    },
+    "verdict": "类别简单但无菌条件备注是真实易错点；技能侧给出条件判定+灭菌验证链+变体边界。技能增益：中。",
+    "gain": "中"
+  },
+  {
+    "product": "腹腔镜手术钳",
+    "category": "02 无源手术器械",
+    "catalog_code": "02-04-09",
+    "is_ai_case": false,
+    "skill_answer": {
+      "classification": "二类（无源内窥镜手术器械）。2008年NMPA分类界定通知明确无源内窥镜手术器械按Ⅱ类管理；02-04-09 内窥镜用钳，省审评口径Ⅱ类",
+      "path": "二类省局注册：技术要求+注册检验+临床评价（多同品种比对）+体系核查；一次性无菌版叠加灭菌/无菌包装验证",
+      "basis": "《分类判定速查》《注册工程师资料枢纽》《临床评价枢纽》",
+      "links": [
+        "https://www.nmpa.gov.cn/directory/web/nmpa////xxgk/fgwj/gzwj/gzwjylqx/20080326120001740.html",
+        "https://yjj.hebei.gov.cn/hebcmde/content/1481",
+        "https://www.nmpa.gov.cn/wwwroot/gyx02302/6808.htm"
+      ],
+      "boundary_note": "⚠️ 开放手术普通手动钳按目录多归Ⅰ类（市局备案）；腔镜配套vs开放、一次性无菌vs复用两个维度都会改变类别"
+    },
+    "plain_answer": {
+      "summary": "能答腹腔镜配套手术器械多为二类（命中河北省审评中心Ⅱ类、NMPA 2008分类界定通知、二类腹腔镜手术器械指导原则），但不区分开放普通钳=Ⅰ类边界，说不出02-04-09条目与分类界定文件沿革",
+      "basis_level": "官方检索",
+      "queries": [
+        "腹腔镜手术钳 医疗器械 分类 注册"
+      ]
+    },
+    "five_scores": {
+      "skill": {
+        "correctness": 5,
+        "traceability": 5,
+        "coverage": 5,
+        "boundary_timeliness": 5,
+        "pitfall_identification": 5
+      },
+      "plain": {
+        "correctness": 4,
+        "traceability": 2,
+        "coverage": 2,
+        "boundary_timeliness": 1,
+        "pitfall_identification": 2
+      }
+    },
+    "verdict": "Ⅱ类结论一致，但开放Ⅰ类vs腔镜Ⅱ类是注册策略分水岭；技能侧给出分类界定文件沿革与双边界标注。技能增益：中高。",
+    "gain": "中高"
+  },
+  {
+    "product": "冠脉球囊扩张导管",
+    "category": "03 神经和心血管手术器械",
+    "catalog_code": "03-13-06",
+    "is_ai_case": false,
+    "skill_answer": {
+      "classification": "三类。血管内导管进入冠脉循环扩张狭窄→接触中枢循环→三类主线；03-13-06 球囊扩张导管，CMDE指导原则目录明确Ⅲ类",
+      "path": "三类国家局注册（eRPS）；临床评价多走同品种比对（以已上市PTCA球囊为等同器械，差异逐项分析）；环氧乙烷灭菌+生物相容性(ISO 10993)",
+      "basis": "《分类判定速查》《临床评价枢纽》《注册工程师资料枢纽》",
+      "links": [
+        "http://www.cmde.org.cn/flfg/zdyz/flmlbzh/flmlylqx/20221221165618175.html",
+        "https://www.nmpa.gov.cn/wwwroot/gyx02302/6877.htm",
+        "https://yjj.hebei.gov.cn/hebcmde/content/2518"
+      ],
+      "boundary_note": "⚠️ 药物洗脱球囊/带涂层球囊属药械组合产品按第三类从严（CMDE已有第三类审评报告实证）；涂层/附件功能差异影响注册单元"
+    },
+    "plain_answer": {
+      "summary": "能答球囊扩张导管三类（命中CMDE指导原则目录Ⅲ类页、河北省审评中心页、NMPA 6877目录页及两份审评报告PDF），但不点明药物洗脱=药械组合从严边界，不覆盖同品种差异逐项分析要求",
+      "basis_level": "官方检索",
+      "queries": [
+        "冠脉球囊扩张导管 医疗器械 分类 注册 三类"
+      ]
+    },
+    "five_scores": {
+      "skill": {
+        "correctness": 5,
+        "traceability": 5,
+        "coverage": 5,
+        "boundary_timeliness": 5,
+        "pitfall_identification": 5
+      },
+      "plain": {
+        "correctness": 4,
+        "traceability": 2,
+        "coverage": 2,
+        "boundary_timeliness": 1,
+        "pitfall_identification": 2
+      }
+    },
+    "verdict": "三类主线一致；真实增量在药物洗脱=药械组合从严边界与同品种比对证据要求。技能增益：中高。",
+    "gain": "中高"
+  },
+  {
+    "product": "颅内动脉瘤栓塞弹簧圈",
+    "category": "03 神经和心血管手术器械",
+    "catalog_code": "13-06-08",
+    "is_ai_case": false,
+    "skill_answer": {
+      "classification": "三类。植入颅内血管接触中枢循环→三类从严。注意：官方目录编码实为13无源植入器械>13-06神经内/外科植入物>13-06-08颅内栓塞系统（CMDE颅内弹簧圈指导原则明确），非03大类条目",
+      "path": "三类国家局注册；技术文件+注册检验+严格GMP体系核查；临床评价多同品种比对或临床试验（创新可走特别审查程序）；FDA同类（HCG，21 CFR 882.5950）为Class II 510(k)路径",
+      "basis": "《分类判定速查》《注册工程师资料枢纽》《临床评价枢纽》",
+      "links": [
+        "https://www.cmde.org.cn/",
+        "https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfRL/rl.cfm?lid=751907&lpcd=HCG"
+      ],
+      "boundary_note": "⚠️ 解脱方式（机械/电解/水解）与材质（铂合金）组合影响注册单元；按直觉套03大类条目属反模式3，须以13-06-08官方编码为准"
+    },
+    "plain_answer": {
+      "summary": "能答弹簧圈三类（命中CMDE两份审评报告PDF、FDA列名库HCG/882.5950、颅内弹簧圈指导原则PDF镜像），但普遍直接归入神经外科器械大类，不会指出官方编码在13-06-08项下；对FDA Class II 510(k)与中国三类的差异无对照",
+      "basis_level": "官方检索",
+      "queries": [
+        "颅内动脉瘤栓塞弹簧圈 医疗器械 分类 注册"
+      ]
+    },
+    "five_scores": {
+      "skill": {
+        "correctness": 5,
+        "traceability": 5,
+        "coverage": 5,
+        "boundary_timeliness": 5,
+        "pitfall_identification": 5
+      },
+      "plain": {
+        "correctness": 3,
+        "traceability": 2,
+        "coverage": 2,
+        "boundary_timeliness": 1,
+        "pitfall_identification": 1
+      }
+    },
+    "verdict": "本shard最典型差异案例：无技能侧大类归属凭直觉套错目录条目（03 vs 13-06-08），技能侧以官方编码纠正并给出中美路径对照。技能增益：高。",
+    "gain": "高"
+  },
+  {
+    "product": "人工髋关节假体",
+    "category": "04 骨科手术器械",
+    "catalog_code": "待核验（13 无源植入器械·骨科植入物类）",
+    "is_ai_case": false,
+    "skill_answer": {
+      "classification": "三类。长期植入骨科植入物→三类主线；CMDE髋关节假体指导原则目录明确Ⅲ类、临床评价路径为同品种。归属提示：目录实际位于13无源植入器械项下（具体二级编码待逐条核对）",
+      "path": "三类国家局注册；技术文件+注册检验+严格GMP体系核查；临床评价同品种比对为主；标准链ISO 13485/14971(YY/T 0316)/10993、材料ASTM F138/F139；委托生产先核2022年第17号禁止委托目录",
+      "basis": "《骨科手术器械_全球注册路径汇编》《临床评价枢纽》《CN_医疗器械委托生产MAH实务》",
+      "links": [
+        "http://www.cmde.org.cn/flfg/zdyz/flmlbzh/flmlylqx/20221227123128127.html"
+      ],
+      "boundary_note": "⚠️ 非骨水泥vs骨水泥、陶瓷/金属/聚乙烯界面材质组合影响注册单元与同品种选择；进口植入产品走国家局；植入类多属禁止委托目录"
+    },
+    "plain_answer": {
+      "summary": "能答髋关节假体三类（命中CMDE髋关节假体指导原则目录页与多份股骨头部件审评报告PDF），但不区分植入物=13大类条目归属，不说明同品种比对路径与禁止委托目录约束",
+      "basis_level": "官方检索",
+      "queries": [
+        "人工髋关节假体 医疗器械 分类 注册 三类"
+      ]
+    },
+    "five_scores": {
+      "skill": {
+        "correctness": 5,
+        "traceability": 5,
+        "coverage": 5,
+        "boundary_timeliness": 5,
+        "pitfall_identification": 5
+      },
+      "plain": {
+        "correctness": 4,
+        "traceability": 2,
+        "coverage": 2,
+        "boundary_timeliness": 1,
+        "pitfall_identification": 2
+      }
+    },
+    "verdict": "三类主线一致；技能侧增量在13大类归属提醒、同品种路径与委托生产禁止目录约束。技能增益：中高。",
+    "gain": "中高"
+  },
+  {
+    "product": "关节镜用钳",
+    "category": "04 骨科手术器械",
+    "catalog_code": "04-03-01",
+    "is_ai_case": false,
+    "skill_answer": {
+      "classification": "中国二类（04-03-01关节镜用手术钳，省审评口径Ⅱ类）。13市场实证：美国基础手动复用型依21 CFR 888.1100(b)(2)（HRX）Class I豁免510(k)；欧盟MDR Rule 6可复用外科器械Class I自我声明+CE；日本按JMDN逐码待核验",
+      "path": "中国二类省局注册（12-18月）：技术要求+注册检验+临床评价（同品种）+体系核查；复用器械附清洗再处理说明（ISO 17664）；标准链YY/T 0686、YY/T 0294.1、GB/T 24627、ISO 13485/14971/10993。真实注册证实证：浙械注准20262040157、渝械注准20242040110等4张",
+      "basis": "《骨科手术器械_全球注册路径汇编》（13市场实证）《分类判定速查》《临床评价枢纽》",
+      "links": [
+        "https://yjj.beijing.gov.cn/yjj/ztzl48/ylqxjgfwzn/jsscgfzl64/wycp73/11002007/index.html",
+        "https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfPCD/classification.cfm",
+        "https://eur-lex.europa.eu/eli/reg/2017/745/oj"
+      ],
+      "boundary_note": "⚠️ 开放手术普通手动钳归Ⅰ类（市局备案）勿按关节镜版硬做Ⅱ类；非无菌复用vs无菌一次性灭菌要求差异大；日本JMDN逐码待核验"
+    },
+    "plain_answer": {
+      "summary": "能答关节镜用钳二类（命中北京药监审评规范、河北省审评中心Ⅱ类页、新华医疗二类注册证公告、NMPA 6810目录页），但无一人给出美国Class I豁免510(k)/欧盟Rule 6 Class I的跨国倒挂对照，也不提醒开放钳=Ⅰ类边界",
+      "basis_level": "官方检索",
+      "queries": [
+        "关节镜用钳 医疗器械 分类 注册 二类"
+      ]
+    },
+    "five_scores": {
+      "skill": {
+        "correctness": 5,
+        "traceability": 5,
+        "coverage": 5,
+        "boundary_timeliness": 5,
+        "pitfall_identification": 5
+      },
+      "plain": {
+        "correctness": 4,
+        "traceability": 2,
+        "coverage": 1,
+        "boundary_timeliness": 1,
+        "pitfall_identification": 1
+      }
+    },
+    "verdict": "本shard增益最高实例：单市场类别无差异，但中国Ⅱ类vs美国Ⅰ类豁免vs欧盟Ⅰ类的分类倒挂、真实注册证实证与豁免陷阱只有技能侧可给出。技能增益：高。",
+    "gain": "高"
+  },
+  {
+    "product": "医用电子直线加速器",
+    "category": "05 放射治疗器械",
+    "catalog_code": "待核验（05 放射治疗器械·医用高能射线治疗设备）",
+    "is_ai_case": false,
+    "skill_answer": {
+      "classification": "三类。有源输出高能射线治疗→三类主线；旧6832医用高能射线治疗设备品名举例明确含医用电子直线加速器、管理类别Ⅲ",
+      "path": "三类国家局注册；技术文件+注册检验（IEC 60601-1/60601-2-1加速器专用）+GMP体系核查；临床评价三路径逐条核对（高能治疗设备通常需充分临床证据，不笼统断言）",
+      "basis": "《分类判定速查》《注册工程师资料枢纽》《临床评价枢纽》",
+      "links": [
+        "https://www.nmpa.gov.cn/wwwroot/gyx02302/6832.htm",
+        "https://www.nmpa.gov.cn/xxgk/ggtg/ylqxggtg/ylqxqtggtg/20170904150301406.html"
+      ],
+      "boundary_note": "⚠️ 附加IGRT影像引导/MLC多叶光栏配置影响技术要求与注册单元；放射装置另涉环评/辐射安全许可（药监注册之外并行要求）"
+    },
+    "plain_answer": {
+      "summary": "能答医用电子直线加速器三类（命中NMPA 6832目录页与NMPA智能云搜索批准记录），但对专用电气安全标准、临床证据路径、环评并行要求无覆盖",
+      "basis_level": "官方检索",
+      "queries": [
+        "医用电子直线加速器 医疗器械 分类 注册 三类"
+      ]
+    },
+    "five_scores": {
+      "skill": {
+        "correctness": 5,
+        "traceability": 5,
+        "coverage": 5,
+        "boundary_timeliness": 5,
+        "pitfall_identification": 5
+      },
+      "plain": {
+        "correctness": 4,
+        "traceability": 2,
+        "coverage": 2,
+        "boundary_timeliness": 1,
+        "pitfall_identification": 2
+      }
+    },
+    "verdict": "三类主线一致；技能侧增量在专用标准链、临床路径三核对与环评并行提示。技能增益：中高。",
+    "gain": "中高"
+  },
+  {
+    "product": "伽玛射线立体定向放射治疗系统（伽马刀）",
+    "category": "05 放射治疗器械",
+    "catalog_code": "待核验（05 放射治疗器械·YY 0831.1/.2对应）",
+    "is_ai_case": false,
+    "skill_answer": {
+      "classification": "三类。CMDE伽玛射束立体定向放射治疗系统审评报告（创新通道CQTS1800290）明确第三类；NMPA 2026-07批准头部伽玛射线立体定向放射治疗系统上市；产品标准YY 0831.1（头部）/YY 0831.2（体部）",
+      "path": "三类国家局注册；技术文件+注册检验+GMP体系核查；临床评价三路径核对（高精度放射外科证据要求高）；美国同类Gamma Knife为510(k)路径（FDA K827583实证）",
+      "basis": "《注册工程师资料枢纽》《临床评价枢纽》",
+      "links": [
+        "https://www.cmde.org.cn/",
+        "https://www.nmpa.gov.cn/directory/web/nmpa/zhuanti/cxylqx/cxylqxlm/20260714181502115.html",
+        "https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpmn/pmn.cfm?ID=K827583"
+      ],
+      "boundary_note": "⚠️ 头部型vs体部型（YY 0831.1 vs .2）分属不同标准与产品描述，注册单元须分开；钴-60放射源另有辐射安全许可体系并行"
+    },
+    "plain_answer": {
+      "summary": "能答伽马刀三类（命中CMDE审评报告PDF、NMPA创新获批新闻、YY 0831标准PDF、FDA 510(k) K827583记录），但不区分头部/体部分型标准，不覆盖放射源并行许可要求",
+      "basis_level": "官方检索",
+      "queries": [
+        "伽玛射线立体定向系统 伽马刀 医疗器械 分类 注册"
+      ]
+    },
+    "five_scores": {
+      "skill": {
+        "correctness": 5,
+        "traceability": 5,
+        "coverage": 5,
+        "boundary_timeliness": 5,
+        "pitfall_identification": 5
+      },
+      "plain": {
+        "correctness": 4,
+        "traceability": 2,
+        "coverage": 2,
+        "boundary_timeliness": 1,
+        "pitfall_identification": 2
+      }
+    },
+    "verdict": "三类主线一致；技能侧增量在YY 0831分型边界与放射源并行许可提示。技能增益：中高。",
+    "gain": "中高"
+  },
+  {
+    "product": "数字化X射线摄影系统（DR）",
+    "category": "06 医用成像器械",
+    "catalog_code": "待核验（06 医用成像器械·X射线摄影设备）",
+    "is_ai_case": false,
+    "skill_answer": {
+      "classification": "二类（普通数字化摄影DR）。有源诊断类→二类主线；北京市局2025年7月公告数字化摄影X射线机按第二类批准注册（京械注准20252060236等）；分界：200mA以下X射线诊断设备→Ⅱ，200mA以上→Ⅲ",
+      "path": "二类境内省局注册（进口二类国家局）；技术要求+注册检验（电气安全与辐射防护）+临床评价（免临床目录核对/同品种）+体系核查；平板探测器与图像处理软件叠加软件文档要求",
+      "basis": "《分类判定速查》《软件人因枢纽》《临床评价枢纽》",
+      "links": [
+        "https://yjj.beijing.gov.cn/yjj/zwgk20/gg17/743724233/index.html",
+        "https://www.nmpa.gov.cn/wwwroot/gyx02302/6830.htm"
+      ],
+      "boundary_note": "⚠️ 电流功率/功能配置决定Ⅱ/Ⅲ——透视、血管造影介入、CT均升级Ⅲ类范畴；多功能数字化组合须按对应条目重新归类"
+    },
+    "plain_answer": {
+      "summary": "多数能答DR二类（命中北京市局二类批准公告、上市公司二类注册证公告、NMPA 6830目录页与FDA列名库MQB/892.1680），但讲不清200mA分界与透视/介入/CT升级Ⅲ类边界，不覆盖省局vs进口国家局路径差异",
+      "basis_level": "官方检索",
+      "queries": [
+        "数字化X射线摄影系统 DR 医疗器械 分类 注册 二类"
+      ]
+    },
+    "five_scores": {
+      "skill": {
+        "correctness": 5,
+        "traceability": 5,
+        "coverage": 5,
+        "boundary_timeliness": 5,
+        "pitfall_identification": 5
+      },
+      "plain": {
+        "correctness": 4,
+        "traceability": 2,
+        "coverage": 2,
+        "boundary_timeliness": 1,
+        "pitfall_identification": 2
+      }
+    },
+    "verdict": "二类主线一致；技能侧增量在参数/功能分界边界与进口路径差异。技能增益：中高。",
+    "gain": "中高"
+  },
+  {
+    "product": "磁共振成像系统（MRI）",
+    "category": "06 医用成像器械",
+    "catalog_code": "待核验（06 医用成像器械）",
+    "is_ai_case": false,
+    "skill_answer": {
+      "classification": "三类。CMDE超导型磁共振成像系统指导原则目录明确管理类别Ⅲ；西门子MRP、联影、中科极化等多份审评报告均第三类",
+      "path": "三类国家局注册；技术文件+注册检验（IEC 60601-2-33磁共振专用）+GMP体系核查；临床评价按医用磁共振成像系统注册审查指导原则（2026修订版以CMDE官网为准）三路径核对；叠加软件生命周期与网络安全文档要求",
+      "basis": "《软件人因枢纽》《临床评价枢纽》《注册工程师资料枢纽》",
+      "links": [
+        "http://www.cmde.org.cn/flfg/zdyz/flmlbzh/flmlylqx/20221222213232197.html",
+        "https://www.cmde.org.cn/"
+      ],
+      "boundary_note": "⚠️ 超导型vs永磁/低场（含移动式头颈MRI）场强与形态差异不改变三类主线但影响技术要求与临床证据；指导原则版本以官方最新发布为准"
+    },
+    "plain_answer": {
+      "summary": "能答MRI三类（命中CMDE超导型磁共振指导原则目录页与5份以上审评报告PDF），但对IEC 60601-2-33专用标准、软件叠加要求、低场变体仍为Ⅲ类等边界无覆盖",
+      "basis_level": "官方检索",
+      "queries": [
+        "磁共振成像系统 MRI 医疗器械 分类 注册 三类"
+      ]
+    },
+    "five_scores": {
+      "skill": {
+        "correctness": 5,
+        "traceability": 5,
+        "coverage": 5,
+        "boundary_timeliness": 5,
+        "pitfall_identification": 5
+      },
+      "plain": {
+        "correctness": 4,
+        "traceability": 2,
+        "coverage": 2,
+        "boundary_timeliness": 1,
+        "pitfall_identification": 2
+      }
+    },
+    "verdict": "三类主线一致；技能侧增量在专用标准、软件叠加要求与变体边界标注。技能增益：中。",
+    "gain": "中"
+  },
+  {
+    "product": "心电监护仪（多参数患者监护仪）",
+    "category": "07 医用诊察和监护器械",
+    "catalog_code": "07-04-01",
+    "is_ai_case": false,
+    "skill_answer": {
+      "classification": "二类。有源诊断监护类（非输出能量治疗）→二类；免临床目录条目07-04-01多参数监护仪，管理类别Ⅱ。",
+      "path": "境内省局注册（进口二类国家局）；SOP-1五步：分类→121号公告技术文件→型检（委托CMA或自检126号）→GMP/ISO13485体系核查→eRPS递交；免临床目录内须交与目录描述对比说明。",
+      "basis": "《分类判定速查》《注册工程师资料枢纽》《注册检验与申报实操枢纽》《临床评价枢纽》《软件人因枢纽》",
+      "links": [
+        "https://yjj.hebei.gov.cn/hebcmde/content/1704",
+        "https://www.nmpa.gov.cn/xxgk/ggtg/ylqxggtg/ylqxqtggtg/20170904150301406.html",
+        "https://www.nmpa.gov.cn/directory/web/nmpa/xxgk/fgwj/xzhgfxwj/20211022153823130.html"
+      ],
+      "boundary_note": "⚠️病人有创监护系统按Ⅲ类管理，是否含有创测量功能决定类别差异；含嵌入式软件/无线传输叠加软件人因要求；品名举例以官方目录最新版为准，待核验/走分类界定。"
+    },
+    "plain_answer": {
+      "summary": "能答二类（命中NMPA旧目录6821页、河北省审评中心免临床条目），但说不清07-04-01编码、不区分有创监护→三类边界、无注册全链与证据链。",
+      "basis_level": "官方检索",
+      "queries": [
+        "心电监护仪 医疗器械 分类 二类 注册"
+      ]
+    },
+    "five_scores": {
+      "skill": {
+        "correctness": 5,
+        "traceability": 5,
+        "coverage": 5,
+        "boundary_timeliness": 5,
+        "pitfall_identification": 5
+      },
+      "plain": {
+        "correctness": 4,
+        "traceability": 2,
+        "coverage": 2,
+        "boundary_timeliness": 1,
+        "pitfall_identification": 2
+      }
+    },
+    "verdict": "技能增益：中。分类主线一致（二类），差异在注册全链、证据链与有创/无创边界标注。",
+    "gain": "中"
+  },
+  {
+    "product": "电子血压计（无创自动测量血压计）",
+    "category": "07 医用诊察和监护器械",
+    "catalog_code": "07-03-03",
+    "is_ai_case": false,
+    "skill_answer": {
+      "classification": "二类（无创血压测量）。速查库直接命中条目；免临床目录07-03-03无创自动测量血压计，示波法，符合YY 0670。",
+      "path": "境内省局注册（进口二类国家局）；技术要求联动YY 0670；型检→GMP体系核查→eRPS；免临床目录内交对比说明；美国FDA侧21 CFR 870.1130 Class II走510(k)。",
+      "basis": "《分类判定速查》《临床评价枢纽》《注册检验与申报实操枢纽》《注册工程师资料枢纽》",
+      "links": [
+        "http://www.cmde.org.cn/flfg/zdyz/flmlbzh/flmlylqx/20221223171832111.html",
+        "https://yjj.hebei.gov.cn/hebcmde/content/1691",
+        "https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfPCD/classification.cfm"
+      ],
+      "boundary_note": "⚠️柯氏音法医用电子血压计变体仍属二类（北京药监局二类审评报告实证）；若宣称生命支持/有创连续测量须重新核对类别（待核验/走分类界定）；含蓝牙/WiFi叠加软件人因要求。"
+    },
+    "plain_answer": {
+      "summary": "能答二类（命中CMDE免临床条目、北京审评报告、FDA K254225显示21 CFR 870.1130 Class II），但无编码、无YY 0670联动、无注册全链，链接零散。",
+      "basis_level": "官方检索",
+      "queries": [
+        "电子血压计 医疗器械 分类 二类 注册"
+      ]
+    },
+    "five_scores": {
+      "skill": {
+        "correctness": 5,
+        "traceability": 5,
+        "coverage": 5,
+        "boundary_timeliness": 5,
+        "pitfall_identification": 5
+      },
+      "plain": {
+        "correctness": 5,
+        "traceability": 2,
+        "coverage": 2,
+        "boundary_timeliness": 1,
+        "pitfall_identification": 2
+      }
+    },
+    "verdict": "技能增益：中。无技能侧分类结论完全正确（如实给5），差异只在溯源、路径全链与边界标注。",
+    "gain": "中"
+  },
+  {
+    "product": "无创呼吸机",
+    "category": "08 呼吸、麻醉和急救器械",
+    "catalog_code": "08-01-06（正压通气治疗机/不用于生命支持的无创呼吸机；以官方目录为准）",
+    "is_ai_case": false,
+    "skill_answer": {
+      "classification": "不用于生命支持的无创呼吸机→二类；用于生命支持/呼吸支持（COPD、肺功能不全）→三类。NMPA官方名单页明示有创=三类、无创非生命支持=二类；OSA治疗正压通气治疗机编码08-01-06二类。",
+      "path": "二类（家用/OSA向）省局注册；三类（生命支持向）国家局注册；GB 9706系列医用电气专用安全标准型检→GMP体系核查→eRPS；临床按三路径分流：家用向多可目录内对比说明，生命支持向多走同品种比对或临床试验。",
+      "basis": "《分类判定速查》《注册工程师资料枢纽》《注册检验与申报实操枢纽》《临床评价枢纽》",
+      "links": [
+        "https://www.nmpa.gov.cn/directory/web/nmpa/ylqx/ylqxjgdt/20230105201319129.html",
+        "https://www.nmpa.gov.cn/xxgk/ggtg/ylqxggtg/ylqxqtggtg/20210930155134148.html"
+      ],
+      "boundary_note": "⚠️同一名称下预期用途是否含生命支持决定二类/三类，为本品最大坑点；家用/临床、有创/无创、雾化/氧疗附件差异影响路径；拿不准走分类界定，以官方最新发布为准。"
+    },
+    "plain_answer": {
+      "summary": "能搜到NMPA官方名单页，但常简化为呼吸机一律三类或无创=低风险，说不清生命支持宣称是分水岭、给不出08-01-06编码与路径分流。",
+      "basis_level": "官方检索",
+      "queries": [
+        "无创呼吸机 医疗器械 分类 三类 二类 注册"
+      ]
+    },
+    "five_scores": {
+      "skill": {
+        "correctness": 5,
+        "traceability": 5,
+        "coverage": 5,
+        "boundary_timeliness": 5,
+        "pitfall_identification": 5
+      },
+      "plain": {
+        "correctness": 3,
+        "traceability": 2,
+        "coverage": 2,
+        "boundary_timeliness": 1,
+        "pitfall_identification": 2
+      }
+    },
+    "verdict": "技能增益：中高。本shard典型差异案例——无创字面陷阱下生命支持宣称决定二类/三类分水岭，无技能侧大概率简化误判。",
+    "gain": "中高"
+  },
+  {
+    "product": "麻醉机",
+    "category": "08 呼吸、麻醉和急救器械",
+    "catalog_code": "08-03（麻醉机条目；具体编码以官方目录为准）",
+    "is_ai_case": false,
+    "skill_answer": {
+      "classification": "三类。手术室吸入麻醉+呼吸控制生命支持一体；河北省审评中心《麻醉机》条目明示管理类别Ⅲ并附麻醉机注册技术审查指导原则；旧目录6854呼吸设备同口径。",
+      "path": "国家药监局注册；121号公告技术文件→GB 9706.1+麻醉机专用安全标准型检（委托CMA或自检126号）→GMP体系核查（三类必查）→eRPS；临床按三路径核对，多走同品种比对或临床试验。",
+      "basis": "《分类判定速查》《注册工程师资料枢纽》《注册检验与申报实操枢纽》《GMP质量体系与验证枢纽》《临床评价枢纽》",
+      "links": [
+        "https://yjj.hebei.gov.cn/hebcmde/content/1743",
+        "https://www.nmpa.gov.cn/wwwroot/gyx02302/6854.htm"
+      ],
+      "boundary_note": "⚠️麻醉蒸发器、麻醉气体监测模块、麻醉呼吸机等选配附件影响结构组成与注册单元；按指导原则逐条核对，以官方最新版本为准，不构成法规意见。"
+    },
+    "plain_answer": {
+      "summary": "能答三类（命中省局审评页与旧目录6854页），但对国家局路径、专用安全标准、体系核查、临床三路径与附件注册单元覆盖浅。",
+      "basis_level": "官方检索",
+      "queries": [
+        "麻醉机 医疗器械 分类 三类 注册 分类目录"
+      ]
+    },
+    "five_scores": {
+      "skill": {
+        "correctness": 5,
+        "traceability": 5,
+        "coverage": 5,
+        "boundary_timeliness": 5,
+        "pitfall_identification": 5
+      },
+      "plain": {
+        "correctness": 4,
+        "traceability": 2,
+        "coverage": 2,
+        "boundary_timeliness": 1,
+        "pitfall_identification": 2
+      }
+    },
+    "verdict": "技能增益：中高。分类主线一致（三类），差异在全链路径、临床评价实操与附件边界。",
+    "gain": "中高"
+  },
+  {
+    "product": "低频治疗仪（低中频治疗设备）",
+    "category": "09 物理治疗器械",
+    "catalog_code": "09-01-03",
+    "is_ai_case": false,
+    "skill_answer": {
+      "classification": "体表低频治疗仪→二类（09-01-03低中频治疗设备，1kHz以下低频电流用于神经肌肉兴奋/镇痛/消炎）。",
+      "path": "省局注册；GB 9706.1+低频治疗专用标准型检→GMP体系核查→eRPS；临床先查免临床目录，否则同品种比对或临床试验。",
+      "basis": "《分类判定速查》《注册工程师资料枢纽》《注册检验与申报实操枢纽》《临床评价枢纽》",
+      "links": [
+        "https://www.nmpa.gov.cn/wwwroot/gyx02302/6826.htm",
+        "https://www.nmpa.gov.cn/directory/web/nmpa/xxgk/fgwj/gzwj/gzwjylqx/20130708120001985.html"
+      ],
+      "boundary_note": "⚠️三类变体明示：体内低频脉冲治疗仪（旧目录6826）、低频电刺激治疗仪刺激脑部穴位改善抑郁焦虑失眠（2013年47个产品分类界定通知）均按Ⅲ类管理；是否体内/脑部刺激直接改变类别，拿不准走分类界定，不硬给结论。"
+    },
+    "plain_answer": {
+      "summary": "能答体表二类（命中旧目录6826与注册机构文章），但不区分体表二类vs体内/脑部三类变体、无编码、无注册全链。",
+      "basis_level": "官方检索",
+      "queries": [
+        "低频治疗仪 医疗器械 分类 二类 注册"
+      ]
+    },
+    "five_scores": {
+      "skill": {
+        "correctness": 5,
+        "traceability": 5,
+        "coverage": 5,
+        "boundary_timeliness": 5,
+        "pitfall_identification": 5
+      },
+      "plain": {
+        "correctness": 3,
+        "traceability": 2,
+        "coverage": 2,
+        "boundary_timeliness": 1,
+        "pitfall_identification": 2
+      }
+    },
+    "verdict": "技能增益：中高。同一产品名下体表二类vs体内/脑部三类是核心分水岭，无技能侧大概率一刀切答二类。",
+    "gain": "中高"
+  },
+  {
+    "product": "红外理疗仪（远红外治疗设备）",
+    "category": "09 物理治疗器械",
+    "catalog_code": "09-03（红外治疗设备条目；具体编码以官方目录为准）",
+    "is_ai_case": false,
+    "skill_answer": {
+      "classification": "二类。2008年587号、2011年231号两版分类界定通知均确认远红外理疗仪按Ⅱ类管理（原编码6826）；2017版目录归入09物理治疗器械。",
+      "path": "省局注册；GB 9706.1+红外治疗专用标准型检→GMP体系核查→eRPS；临床按免临床目录三路径核对；美国FDA侧21 CFR 890.5500 Class II（产品代码ILY）走510(k)。",
+      "basis": "《分类判定速查》《注册工程师资料枢纽》《注册检验与申报实操枢纽》《临床评价枢纽》",
+      "links": [
+        "https://www.nmpa.gov.cn/xxgk/fgwj/gzwj/gzwjylqx/20081009120001373_4.html",
+        "https://www.nmpa.gov.cn/directory/web/nmpa/xxgk/fgwj/gzwj/gzwjylqx/20110527120001410_3.html",
+        "https://www.nmpa.gov.cn/wwwroot/gyx02302/6826.htm"
+      ],
+      "boundary_note": "⚠️同属光谱辐射治疗仪器的光量子血液治疗机（加氧充磁光照）为Ⅲ类；是否血液照射/侵入式决定类别；近红外/激光原理单独核对目录，待核验/走分类界定。"
+    },
+    "plain_answer": {
+      "summary": "能答二类（命中两版NMPA通知页与FDA K101693），但不知晓血液照射三类边界、无中美法规对应、无注册全链。",
+      "basis_level": "官方检索",
+      "queries": [
+        "红外理疗仪 红外线治疗设备 医疗器械 分类 注册"
+      ]
+    },
+    "five_scores": {
+      "skill": {
+        "correctness": 5,
+        "traceability": 5,
+        "coverage": 5,
+        "boundary_timeliness": 5,
+        "pitfall_identification": 5
+      },
+      "plain": {
+        "correctness": 4,
+        "traceability": 2,
+        "coverage": 2,
+        "boundary_timeliness": 1,
+        "pitfall_identification": 2
+      }
+    },
+    "verdict": "技能增益：中。类别一致，边界变体（血液照射三类）与中美双法规对应是技能侧增量。",
+    "gain": "中"
+  },
+  {
+    "product": "血液透析机",
+    "category": "10 输血、透析和体外循环器械",
+    "catalog_code": "10-01（血液净化设备条目；具体编码以官方目录为准）",
+    "is_ai_case": false,
+    "skill_answer": {
+      "classification": "三类。体外血液净化生命支持类；强制性国标GB 9706.2-16编制说明明示血液透析/透析滤过/滤过设备属Ⅲ类生命支持类设备；旧目录6845同口径；卫健委透析中心标准要求符合III类。",
+      "path": "国家药监局注册；GB 9706.1+GB 9706.2-16强制专用标准型检→GMP体系核查（三类必查）→eRPS；透析机多不在免临床目录内，走同品种比对或临床试验；透析器独立三类管理。",
+      "basis": "《分类判定速查》《注册工程师资料枢纽》《注册检验与申报实操枢纽》《临床评价枢纽》《GMP质量体系与验证枢纽》",
+      "links": [
+        "https://std.samr.gov.cn/gb/search/gbDetailed?id=5DDA8B9DA4B618DEE05397BE0A0A95A7",
+        "https://www.nmpa.gov.cn/wwwroot/gyx02302/6845.htm"
+      ],
+      "boundary_note": "⚠️血液透析滤过机（HDF）、单人/多人机、联网远程监测软件等变体按结构组成与软件要求逐条核对；透析器（中空纤维）属独立三类，勿与主机混同；以官方最新发布为准。"
+    },
+    "plain_answer": {
+      "summary": "能答三类（命中旧目录6845、国标编制说明、卫健委文件），但无注册全链、不知透析机与透析器分别管理、无临床路径覆盖。",
+      "basis_level": "官方检索",
+      "queries": [
+        "血液透析机 医疗器械 分类 三类 注册 分类目录"
+      ]
+    },
+    "five_scores": {
+      "skill": {
+        "correctness": 5,
+        "traceability": 5,
+        "coverage": 5,
+        "boundary_timeliness": 5,
+        "pitfall_identification": 5
+      },
+      "plain": {
+        "correctness": 4,
+        "traceability": 2,
+        "coverage": 2,
+        "boundary_timeliness": 1,
+        "pitfall_identification": 2
+      }
+    },
+    "verdict": "技能增益：中高。分类主线一致（三类），差异在强制标准联动、分别管理口径与全链路径。",
+    "gain": "中高"
+  },
+  {
+    "product": "体外循环管路（一次性使用心肺转流用管路及接头）",
+    "category": "10 输血、透析和体外循环器械",
+    "catalog_code": "10-06-06",
+    "is_ai_case": false,
+    "skill_answer": {
+      "classification": "三类。接触血液（中枢循环）、一次性无菌提供→按无源规则三类从严；免临床目录条目10-06-06心肺转流用管路管理类别Ⅲ；中检院明示一次性使用动静脉插管已纳入三类高风险管理。",
+      "path": "国家药监局注册；121号公告技术文件→型检联动生物相容性ISO 10993系列、无菌/EO残留检测→GMP体系核查→eRPS；免临床目录内交对比说明。",
+      "basis": "《分类判定速查》《临床评价枢纽》《注册检验与申报实操枢纽》《生物相容性测试规划枢纽》《灭菌包装验证枢纽》",
+      "links": [
+        "https://yjj.hebei.gov.cn/hebcmde/content/1860",
+        "https://www.nifdc.org.cn/nifdc/bshff/ylqxbzhgl/qxbzhjdxgpx/bzhjd/202510111445591755474.html",
+        "https://www.nmpa.gov.cn/wwwroot/gyx02302/6845.htm"
+      ],
+      "boundary_note": "⚠️一次性管路=耗材不等于低风险，接触血液即三类；管道套包按YY/T 0730-2023整体注册单元核对；非无菌/复用同类产品类别另行核对（待核验）。"
+    },
+    "plain_answer": {
+      "summary": "能搜到旧目录6845与中检院解读，但通用AI易把一次性管路笼统当普通耗材二类，说不清10-06-06编码、生物相容性/无菌验证与免临床对比说明。",
+      "basis_level": "官方检索",
+      "queries": [
+        "体外循环管路 一次性使用 医疗器械 分类 三类"
+      ]
+    },
+    "five_scores": {
+      "skill": {
+        "correctness": 5,
+        "traceability": 5,
+        "coverage": 5,
+        "boundary_timeliness": 5,
+        "pitfall_identification": 5
+      },
+      "plain": {
+        "correctness": 3,
+        "traceability": 2,
+        "coverage": 2,
+        "boundary_timeliness": 1,
+        "pitfall_identification": 2
+      }
+    },
+    "verdict": "技能增益：中高。耗材直觉误判三类是本品核心坑点，无技能侧存在实质性类别误判风险。",
+    "gain": "中高"
+  },
+  {
+    "product": "压力蒸汽灭菌器",
+    "category": "11 医疗器械消毒灭菌器械",
+    "catalog_code": "11-01（消毒灭菌设备条目；具体编码以官方目录为准）",
+    "is_ai_case": false,
+    "skill_answer": {
+      "classification": "二类。旧目录6857压力蒸汽灭菌设备（预真空/高压/立式/卧式/脉动真空/手提式）→Ⅱ；河北省审评中心明示11子目录下Ⅱ类产品均免于临床评价。",
+      "path": "省局注册；GB 8599系列专用标准+GB 9706.1型检（委托CMA或自检126号）→GMP体系核查→eRPS；免临床目录内交对比说明；美国FDA侧21 CFR 880.6880 Class II（产品代码FLE）走510(k)。",
+      "basis": "《注册工程师资料枢纽》《注册检验与申报实操枢纽》《临床评价枢纽》《灭菌包装验证枢纽》",
+      "links": [
+        "https://www.nmpa.gov.cn/wwwroot/gyx02302/6857.htm",
+        "https://yjj.hebei.gov.cn/hebcmde/content/1866"
+      ],
+      "boundary_note": "⚠️大型vs小型灭菌器有不同注册指导原则；灭菌过程确认IQ/OQ/PQ与再处理验证按灭菌枢纽联动；以官方最新发布为准。"
+    },
+    "plain_answer": {
+      "summary": "能答二类（命中旧目录6857、省局条目、FDA K100622），但不知11子目录二类均免临床整体口径、大小型指导原则差异与过程确认要求。",
+      "basis_level": "官方检索",
+      "queries": [
+        "压力蒸汽灭菌器 医疗器械 分类 二类 注册 分类目录"
+      ]
+    },
+    "five_scores": {
+      "skill": {
+        "correctness": 5,
+        "traceability": 5,
+        "coverage": 5,
+        "boundary_timeliness": 5,
+        "pitfall_identification": 5
+      },
+      "plain": {
+        "correctness": 4,
+        "traceability": 2,
+        "coverage": 2,
+        "boundary_timeliness": 1,
+        "pitfall_identification": 2
+      }
+    },
+    "verdict": "技能增益：中。类别一致，差异在11子目录免临床整体口径与灭菌过程确认联动。",
+    "gain": "中"
+  },
+  {
+    "product": "环氧乙烷灭菌器",
+    "category": "11 医疗器械消毒灭菌器械",
+    "catalog_code": "11-03-03",
+    "is_ai_case": false,
+    "skill_answer": {
+      "classification": "二类。旧目录6857气体灭菌设备（环氧乙烷灭菌器）→Ⅱ；2017版目录编码11-03-03。",
+      "path": "省局注册；YY 0503-2023+压力容器/安全强制标准型检→GMP体系核查→eRPS；免临床目录内交对比说明；美国FDA侧EO Gas Sterilizer Class II（产品代码PJJ）走510(k)。",
+      "basis": "《注册工程师资料枢纽》《注册检验与申报实操枢纽》《临床评价枢纽》《灭菌包装验证枢纽》",
+      "links": [
+        "https://www.nmpa.gov.cn/wwwroot/gyx02302/6857.htm",
+        "https://www.cmde.org.cn/hbpdf/YY0503-2023.pdf"
+      ],
+      "boundary_note": "⚠️YY 0503-2023分A类（工业灭菌≥1m³可编程）/B类（临床灭菌≤1m³预置周期）；灭菌过程确认IQ/OQ/PQ、EO残留量、解析与环境排放合规是隐性申报要点；以官方最新发布为准。"
+    },
+    "plain_answer": {
+      "summary": "能答二类（命中旧目录6857与CMDE行标PDF），但不知YY 0503的A/B分型、EO残留与过程确认要求、FDA代码PJJ，注册全链覆盖浅。",
+      "basis_level": "官方检索",
+      "queries": [
+        "环氧乙烷灭菌器 医疗器械 分类 二类 注册 11"
+      ]
+    },
+    "five_scores": {
+      "skill": {
+        "correctness": 5,
+        "traceability": 5,
+        "coverage": 5,
+        "boundary_timeliness": 5,
+        "pitfall_identification": 5
+      },
+      "plain": {
+        "correctness": 4,
+        "traceability": 2,
+        "coverage": 2,
+        "boundary_timeliness": 1,
+        "pitfall_identification": 2
+      }
+    },
+    "verdict": "技能增益：中。类别一致，差异在行标分型、灭菌过程确认与EO残留隐性申报面。",
+    "gain": "中"
+  },
+  {
+    "product": "心脏起搏器（植入式心脏起搏器）",
+    "category": "12 有源植入器械",
+    "catalog_code": "12-01（心脏起搏类条目；具体编码以官方目录为准）",
+    "is_ai_case": false,
+    "skill_answer": {
+      "classification": "三类（有源植入）。植入人体、有源、接触心血管系统；CMDE审评报告《植入式心脏起搏器》明示第三类；无导线起搏器（Micra/Aveir）变体同口径三类。",
+      "path": "国家药监局注册（创新通道可加急）；植入式有源专用安全标准+生物相容性ISO 10993+电池寿命/EMC型检→GMP体系核查（三类必查）→eRPS；临床三路径实证：传统产品同品种比对、无导线/重大变更（杯和引脚/尺寸/性能）走临床试验（前瞻多中心单组目标值）；47号令变更注册/延续（5年有效期届满前6个月）；上市后2018年第1号令监测（死亡7日/严重伤害20日）+UDI强制赋码。",
+      "basis": "《分类判定速查》《临床评价枢纽》《注册检验与申报实操枢纽》《变更延续管理枢纽》《上市后监管枢纽》《生物相容性测试规划枢纽》《注册工程师资料枢纽》",
+      "links": [
+        "https://www.cmde.org.cn/directory/web/cmde/images/1rLI68q90MTU4MbwsqnG96OoQ1FaMTcwMDEzOaOpcy5wZGY=.pdf",
+        "https://www.gov.cn/zhengce/2021-08/31/content_5723519.htm",
+        "https://www.samr.gov.cn/cms_files/filemanager/samr/www/samrnew/samrgkml/nsjg/bgt/202106/W020211127427208653527.pdf"
+      ],
+      "boundary_note": "⚠️有导线/无导线、双腔/单腔、含远程监测软件等变体注册单元与临床路径差异显著；电极导线与脉冲发生器分体注册；以官方最新发布为准，不构成法规意见。"
+    },
+    "plain_answer": {
+      "summary": "能答三类植入物高风险（命中多份CMDE审评报告PDF），但说不清同品种比对vs临床试验适用条件、不知创新通道、对变更延续（5年/届满前6个月）、上市后时限与UDI义务几乎无覆盖。",
+      "basis_level": "官方检索",
+      "queries": [
+        "心脏起搏器 有源植入 医疗器械 三类 注册 临床评价"
+      ]
+    },
+    "five_scores": {
+      "skill": {
+        "correctness": 5,
+        "traceability": 5,
+        "coverage": 5,
+        "boundary_timeliness": 5,
+        "pitfall_identification": 5
+      },
+      "plain": {
+        "correctness": 4,
+        "traceability": 2,
+        "coverage": 1,
+        "boundary_timeliness": 1,
+        "pitfall_identification": 1
+      }
+    },
+    "verdict": "技能增益：高。本shard典型差异案例——无技能侧仅答三类一句，技能侧给出临床双路径实证、变更延续与上市后全链。",
+    "gain": "高"
+  },
+  {
+    "product": "脑深部刺激器（DBS，植入式神经刺激器）",
+    "category": "12 有源植入器械",
+    "catalog_code": "12-04（神经刺激器类条目；具体编码以官方目录为准）",
+    "is_ai_case": false,
+    "skill_answer": {
+      "classification": "三类（有源植入/神经刺激）。植入颅内有源神经刺激；CMDE审评报告《植入式脑深部神经刺激器》明示第三类；脉冲发生器套件、电极导线套件分体同口径三类。",
+      "path": "国家药监局注册；脉冲发生器/电极导线/延伸导线分体注册单元分别申报；植入式有源专用安全标准+生物相容性ISO 10993型检→GMP体系核查→eRPS；临床官方实证为同品种比对（选取已上市国械注准等同品种，差异逐项分析）；47号令变更注册/延续（5年届满前6个月）；上市后2018年第1号令监测+UDI赋码。",
+      "basis": "《分类判定速查》《临床评价枢纽》《注册检验与申报实操枢纽》《变更延续管理枢纽》《上市后监管枢纽》《生物相容性测试规划枢纽》",
+      "links": [
+        "https://www.cmde.org.cn/directory/web/cmde/images/1775030062660022588.pdf",
+        "https://www.cmde.org.cn/directory/web/cmde/images/1717118549950031195.pdf",
+        "https://www.gov.cn/zhengce/2021-08/31/content_5723519.htm"
+      ],
+      "boundary_note": "⚠️适应症扩展（帕金森→震颤→癫痫）常触发新临床评价/变更注册，勿按同品种外推；体外程控仪、充电设备等配件类别单独核对；以官方最新发布为准。"
+    },
+    "plain_answer": {
+      "summary": "能答三类神经刺激（命中多份CMDE审评报告与FDA列名），但对分体注册单元、同品种比对路径、适应症扩展触发变更、上市后与UDI义务几乎无覆盖。",
+      "basis_level": "官方检索",
+      "queries": [
+        "脑深部刺激器 DBS 医疗器械 分类 三类 注册"
+      ]
+    },
+    "five_scores": {
+      "skill": {
+        "correctness": 5,
+        "traceability": 5,
+        "coverage": 5,
+        "boundary_timeliness": 5,
+        "pitfall_identification": 5
+      },
+      "plain": {
+        "correctness": 4,
+        "traceability": 2,
+        "coverage": 1,
+        "boundary_timeliness": 1,
+        "pitfall_identification": 1
+      }
+    },
+    "verdict": "技能增益：高。与心脏起搏器并列最高增益——分体注册单元与适应症扩展是通用AI完全无感知的申报面。",
+    "gain": "高"
+  },
+  {
+    "product": "可吸收缝合线",
+    "category": "13 无源植入器械",
+    "catalog_code": "02-15-01（官方目录实际条目；按组织者指定归入本 shard 作可吸收植入代表）",
+    "is_ai_case": false,
+    "skill_answer": {
+      "classification": "三类。无源、植入人体组织后可降解吸收（长期留存）→ 三类；官方目录条目为 02 无源手术器械 02-15 缝合材料及粘合剂·可吸收性外科缝线（第三类）。",
+      "path": "三类→国家药监局注册：立项分类→121号公告技术文件→注册检验（委托CMA或自检126号）→GMP含植入性附录体系核查→eRPS递交（2021年15号通告目录）；临床评价以同品种比对为主（官方《可吸收性外科缝线注册审查指导原则2024修订版》及同品种临床评价指导原则）；无菌一次性提供须EO/辐照灭菌确认+ISO11607无菌屏障验证+SAL≤10⁻⁶；可吸收材料降解产物生物相容评价（ISO10993-1/-13）。",
+      "basis": "《分类判定速查》《注册工程师资料枢纽》《注册检验与申报实操枢纽》《GMP质量体系与验证枢纽》《临床评价枢纽》《生物相容性测试规划枢纽》《灭菌包装验证枢纽》",
+      "links": [
+        "https://www.nmpa.gov.cn/xxgk/ggtg/ylqxggtg/ylqxqtggtg/20170904150301406.html",
+        "https://www.nmpa.gov.cn/xxgk/ggtg/ylqxggtg/ylqxqtggtg/20210930155134148.html",
+        "https://www.nmpa.gov.cn/xxgk/ggtg/ylqxggtg/ylqxqtggtg/20250513095643145.html",
+        "https://erps.cmde.org.cn/"
+      ],
+      "boundary_note": "⚠️ 可吸收（三类）vs 不可吸收缝线（二类/一类）类别分界；动物源vs合成材料研究要求不同；含药涂层/药械组合按三类从严；目录条目与指导原则以官方最新版为准。"
+    },
+    "plain_answer": {
+      "summary": "能答可吸收缝合线属第三类（命中省级审评中心‘管理类别Ⅲ、临床评价：同品种’及2024修订版指导原则、FDA产品代码HMO为Class III PMA），但对可吸收/不可吸收类别分界、灭菌确认与降解产物生物相容终点、同品种差异逐项分析覆盖不足，链接零散。",
+      "basis_level": "官方检索",
+      "queries": [
+        "可吸收缝合线 医疗器械 分类 第三类 注册"
+      ]
+    },
+    "five_scores": {
+      "skill": {
+        "correctness": 5,
+        "traceability": 5,
+        "coverage": 5,
+        "boundary_timeliness": 5,
+        "pitfall_identification": 5
+      },
+      "plain": {
+        "correctness": 4,
+        "traceability": 2,
+        "coverage": 2,
+        "boundary_timeliness": 1,
+        "pitfall_identification": 2
+      }
+    },
+    "verdict": "分类主线一致，差异集中在降解产物生物相容+灭菌确认+同品种指导原则驱动的申报面与证据链；无技能侧易混淆可吸收与不可吸收缝线。技能增益：中高。",
+    "gain": "中高"
+  },
+  {
+    "product": "髋臼杯",
+    "category": "13 无源植入器械",
+    "catalog_code": "13-04（关节植入物；三级编码待核验）",
+    "is_ai_case": false,
+    "skill_answer": {
+      "classification": "三类。无源、长期植入骨与关节（髋关节假体组件）→ 三类；13 无源植入器械→关节植入物，髋臼杯为髋关节假体组成部件；CMDE髋关节假体审评条目明确管理类别Ⅲ、临床评价同品种；注册证实证国械注准20213130461为第三类（含髋臼杯）。",
+      "path": "三类→国家药监局注册：型检（委托CMA/自检126号）、GMP植入附录体系核查、eRPS递交；临床以同品种比对为主（摩擦界面/材料/固定方式差异逐项分析）；钛/钴铬金属、UHMWPE、陶瓷界面植入终点（细胞毒性、致敏、刺激、血液相容、遗传毒性、植入后局部效应/磨损颗粒）；高分子组件常用γ辐照灭菌（ISO11137，VDmax剂量设定）。",
+      "basis": "《分类判定速查》《注册工程师资料枢纽》《注册检验与申报实操枢纽》《GMP质量体系与验证枢纽》《临床评价枢纽》《生物相容性测试规划枢纽》《灭菌包装验证枢纽》《市场准入与销售枢纽》",
+      "links": [
+        "http://www.cmde.org.cn/flfg/zdyz/flmlbzh/flmlylqx/20221227123128127.html",
+        "https://www.nmpa.gov.cn/xxgk/ggtg/ylqxggtg/ylqxqtggtg/20170904150301406.html",
+        "https://erps.cmde.org.cn/"
+      ],
+      "boundary_note": "⚠️ 骨水泥型vs生物型（非骨水泥）固定路径差异；摩擦界面变体研究要点不同；13-11配件类（中置器/孔塞）与假体本体临床路径不同；人工关节已国家集采（2021），定价受中标结果影响。"
+    },
+    "plain_answer": {
+      "summary": "能答髋臼杯/髋关节假体属第三类（命中CMDE髋关节假体审评条目Ⅲ类同品种、企业注册证公告国械注准20213130461第三类、FDA产品代码OVO为Class III PMA），但对13-04条目、骨水泥/生物型变体、磨损颗粒生物相容终点、γ辐照灭菌确认覆盖不足。",
+      "basis_level": "官方检索",
+      "queries": [
+        "髋臼杯 人工髋关节假体 医疗器械 分类 三类 注册"
+      ]
+    },
+    "five_scores": {
+      "skill": {
+        "correctness": 5,
+        "traceability": 5,
+        "coverage": 5,
+        "boundary_timeliness": 5,
+        "pitfall_identification": 5
+      },
+      "plain": {
+        "correctness": 4,
+        "traceability": 2,
+        "coverage": 2,
+        "boundary_timeliness": 1,
+        "pitfall_identification": 2
+      }
+    },
+    "verdict": "分类主线一致，差异集中在申报面深度（生物相容试验终点、灭菌方式选择、配件条目与集采背景）与证据链组织。技能增益：中高。",
+    "gain": "中高"
+  },
+  {
+    "product": "一次性输液器",
+    "category": "14 注输、护理和防护器械",
+    "catalog_code": "14-01（注输器械；三级编码待核验）",
+    "is_ai_case": false,
+    "skill_answer": {
+      "classification": "三类。无源、无菌输送液体入静脉（接触血液体液）→ 三类；NMPA 2015年第71号通告附件目录明确‘一次性使用输液器 三类’。",
+      "path": "三类→国家药监局注册：型检以GB 8368（重力输液式）为性能依据、GMP无菌附录体系核查（洁净生产、灭菌过程确认为必查项）、eRPS递交；临床：传统型列入《免于进行临床试验的第三类医疗器械目录》（第二批），但目录内≠免资料，须提交与目录描述对比说明；EO灭菌确认（ISO11135）+EO残留限量（ISO10993-7）；管路/药液过滤器细胞毒性、致敏、刺激评价。",
+      "basis": "《分类判定速查》《注册工程师资料枢纽》《注册检验与申报实操枢纽》《GMP质量体系与验证枢纽》《临床评价枢纽》《灭菌包装验证枢纽》《生物相容性测试规划枢纽》",
+      "links": [
+        "https://www.nmpa.gov.cn/directory/web/nmpa/xxgk/ggtg/ylqxggtg/ylqxqtggtg/20151012120001352.html",
+        "https://www.nmpa.gov.cn/xxgk/ggtg/ylqxggtg/ylqxqtggtg/20250513095643145.html",
+        "https://www.cmde.org.cn/flfg/fgwj/ggtg/20220110131758771.html"
+      ],
+      "boundary_note": "⚠️ 静脉输液器（三类）vs 非静脉用途（鼻饲/冲洗）条目不同；带加药壶/三通/一体化输液泵按具体组成核对；一次性使用无菌注射器同属三类（71号通告目录）。"
+    },
+    "plain_answer": {
+      "summary": "能答一次性输液器属第三类（命中NMPA 2015年第71号通告目录、免临床试验第三类目录第二批含GB 8368传统型输液器、《一次性使用无菌医疗器械监督管理办法》），但对免临床目录内仍须交对比说明、EO残留限量、静脉vs非静脉注输器械类别边界覆盖不足。",
+      "basis_level": "官方检索",
+      "queries": [
+        "一次性输液器 医疗器械 分类 三类 注册"
+      ]
+    },
+    "five_scores": {
+      "skill": {
+        "correctness": 5,
+        "traceability": 5,
+        "coverage": 5,
+        "boundary_timeliness": 5,
+        "pitfall_identification": 5
+      },
+      "plain": {
+        "correctness": 4,
+        "traceability": 2,
+        "coverage": 2,
+        "boundary_timeliness": 1,
+        "pitfall_identification": 2
+      }
+    },
+    "verdict": "本shard‘免临床目录内≠免资料’反模式典型命中案例；无技能侧答对类别却在临床评价环节易踩坑，技能侧强制给出对比说明义务与灭菌确认申报面。技能增益：中高。",
+    "gain": "中高"
+  },
+  {
+    "product": "医用外科口罩",
+    "category": "14 注输、护理和防护器械",
+    "catalog_code": "14-14（医护人员防护用品；三级编码待核验）",
+    "is_ai_case": false,
+    "skill_answer": {
+      "classification": "二类。速查库命中‘一次性医用外科口罩→二类（无菌提供则按二类管理；普通防护口罩多一类）’；NMPA口径：医用口罩属于第二类医疗器械；2020专题页：医用口罩/医用防护服按二类管理，护目镜/面罩按一类管理。",
+      "path": "二类→省级药监局注册：型检按YY 0469（过滤效率、细菌过滤效率、压损、合成血液穿透）、GMP体系核查、eRPS递交；无菌型经EO灭菌→须灭菌确认报告（SAL≤10⁻⁶，GB 18279.1/ISO11135）+标签注明灭菌方式与有效期；非无菌型不做灭菌确认但技术要求与标签按非无菌提供组织；临床评价多列入免临床目录，仍须对比说明。",
+      "basis": "《分类判定速查》《注册检验与申报实操枢纽》《灭菌包装验证枢纽》《临床评价枢纽》",
+      "links": [
+        "https://www.nmpa.gov.cn/directory/web/nmpa//zhuanti/yqyjzxd/yqyjxd/20200330170001581.html",
+        "https://www.nmpa.gov.cn/xxgk/ggtg/ylqxggtg/ylqxqtggtg/20250513095643145.html",
+        "https://www.nmpa.gov.cn/xxgk/ggtg/ylqxggtg/ylqxqtggtg/20170904150301406.html"
+      ],
+      "boundary_note": "⚠️ 普通棉纱口罩/日常防护口罩为民用产品、不作为医疗器械管理；医用防护口罩（N95）同为二类；本品类特殊点：类别不因无菌/非无菌提供而改变（均二类），差异在灭菌确认与标签申报环节，不套用‘无菌提供则一类升二类’通用规则硬推。"
+    },
+    "plain_answer": {
+      "summary": "能答医用外科口罩属第二类（命中NMPA医用口罩二类管理口径、省局注册信息‘无菌产品经环氧乙烷灭菌’、四川《医用口罩防护服注册技术审评要点》），但对医用vs民用边界、护目镜/面罩一类对照、无菌型EO灭菌确认报告要求覆盖不足。",
+      "basis_level": "官方检索",
+      "queries": [
+        "医用外科口罩 医疗器械 分类 二类 注册 无菌"
+      ]
+    },
+    "five_scores": {
+      "skill": {
+        "correctness": 5,
+        "traceability": 5,
+        "coverage": 5,
+        "boundary_timeliness": 5,
+        "pitfall_identification": 5
+      },
+      "plain": {
+        "correctness": 4,
+        "traceability": 2,
+        "coverage": 2,
+        "boundary_timeliness": 2,
+        "pitfall_identification": 2
+      }
+    },
+    "verdict": "类别简单但边界典型：无技能侧常混淆‘医用二类/民用非械/护目镜一类’三条线，并漏掉无菌型灭菌确认申报差异。技能增益：中。",
+    "gain": "中"
+  },
+  {
+    "product": "电动轮椅",
+    "category": "15 患者承载器械",
+    "catalog_code": "待核验",
+    "is_ai_case": false,
+    "skill_answer": {
+      "classification": "二类。有源、辅助移动（非治疗输出能量）→ 二类；NMPA监管通报明确‘第二类医疗器械电动轮椅车’；目录条目（15患者承载器械或19医用康复器械中轮椅车条目）三级编码待核验。",
+      "path": "二类→省级药监局注册：型检含电气安全、电磁兼容（GB 9706系列类要求）、蓄电池与充电系统、机械强度；GMP体系核查、eRPS递交；临床评价三路径核对（先查免临床目录2025年版，不在目录评估同品种比对）。",
+      "basis": "《分类判定速查》《注册工程师资料枢纽》《注册检验与申报实操枢纽》《临床评价枢纽》",
+      "links": [
+        "https://www.nmpa.gov.cn/xxgk/ggtg/ylqxggtg/ylqxqtggtg/20170904150301406.html",
+        "https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfPCD/classification.cfm",
+        "https://www.nmpa.gov.cn/xxgk/ggtg/ylqxggtg/ylqxqtggtg/20250513095643145.html"
+      ],
+      "boundary_note": "⚠️ 手动轮椅车与电动轮椅类别不同（一类/二类边界逐条核对目录）；带站立功能/上床椅/智能导航变体可能改变预期用途与路径；美国FDA 21 CFR 890.3860（产品代码ITI）Powered Wheelchair为Class II（510(k)），供出海对照；目录条目归属以官方目录为准。"
+    },
+    "plain_answer": {
+      "summary": "能答电动轮椅属第二类（命中NMPA监管通报‘第二类医疗器械电动轮椅车’、FDA 510(k)函件21 CFR 890.3860 Class II产品代码ITI），但对手动/电动类别边界、电气安全与EMC测试项、目录条目归属（15 vs 19）覆盖不足。",
+      "basis_level": "官方检索",
+      "queries": [
+        "电动轮椅车 医疗器械 分类 二类 注册"
+      ]
+    },
+    "five_scores": {
+      "skill": {
+        "correctness": 5,
+        "traceability": 5,
+        "coverage": 5,
+        "boundary_timeliness": 5,
+        "pitfall_identification": 5
+      },
+      "plain": {
+        "correctness": 4,
+        "traceability": 3,
+        "coverage": 2,
+        "boundary_timeliness": 1,
+        "pitfall_identification": 2
+      }
+    },
+    "verdict": "类别一致，差异在测试要求清单、变体边界与条目归属的诚实标注（待核验）。技能增益：中。",
+    "gain": "中"
+  },
+  {
+    "product": "电动病床",
+    "category": "15 患者承载器械",
+    "catalog_code": "15-03-01",
+    "is_ai_case": false,
+    "skill_answer": {
+      "classification": "二类（15-03-01电动病床）。省级审评中心条目明确‘管理类别：Ⅱ；免临床评价：15-03-01电动病床’（网电源/内部电源或组合式电驱动，含床面/床架/升降机构/电控部分）；注册证备注口径‘15患者承载器械-03医用病床 II类’。",
+      "path": "二类→省级药监局注册：型检（电气安全、升降/背板机构强度、安全工作载荷）、GMP体系核查、eRPS递交；临床：列入免临床目录（2025年版对应条目），但须提交与目录描述对比说明，不是什么都不交（反模式#1）。",
+      "basis": "《分类判定速查》《注册工程师资料枢纽》《注册检验与申报实操枢纽》《临床评价枢纽》",
+      "links": [
+        "https://yjj.hebei.gov.cn/hebcmde/content/2091",
+        "https://www.nmpa.gov.cn/xxgk/ggtg/ylqxggtg/ylqxqtggtg/20250513095643145.html",
+        "https://www.nmpa.gov.cn/xxgk/ggtg/ylqxggtg/ylqxqtggtg/20170904150301406.html"
+      ],
+      "boundary_note": "⚠️ 手动病床与电动病床类别不同（一类边界）；电动手术台（旧分类6854电动液压手术台Ⅱ类）与电动病床为不同条目；康复床按界定通知有源Ⅱ类/无源Ⅰ类；带防褥疮/称重/监护集成变体逐条核对。"
+    },
+    "plain_answer": {
+      "summary": "能答电动病床属第二类（命中省级审评中心15-03-01 Ⅱ类免临床条目、旧目录6854电动手术台Ⅱ类、2008年分类界定通知康复床有源Ⅱ/无源Ⅰ），但对免临床目录内≠免资料、手动病床一类边界、手术台条目与病床条目差异覆盖不足。",
+      "basis_level": "官方检索",
+      "queries": [
+        "电动病床 医用电动病床 医疗器械 分类 二类 注册"
+      ]
+    },
+    "five_scores": {
+      "skill": {
+        "correctness": 5,
+        "traceability": 5,
+        "coverage": 5,
+        "boundary_timeliness": 5,
+        "pitfall_identification": 5
+      },
+      "plain": {
+        "correctness": 4,
+        "traceability": 3,
+        "coverage": 2,
+        "boundary_timeliness": 2,
+        "pitfall_identification": 2
+      }
+    },
+    "verdict": "本shard‘免临床目录内≠免资料’反模式典型命中案例；无技能侧答对二类与免临床却易漏掉对比说明义务。技能增益：中。",
+    "gain": "中"
+  },
+  {
+    "product": "人工晶状体",
+    "category": "16 眼科器械",
+    "catalog_code": "16-06（眼科植入物及辅助器械；三级编码待核验）",
+    "is_ai_case": false,
+    "skill_answer": {
+      "classification": "三类。无源、长期植入眼内（晶状体囊袋）→ 三类；CMDE多份人工晶状体注册技术审评报告明确‘产品管理类别：第三类’（多焦点非球面、焦深延长型等变体）。",
+      "path": "三类→国家药监局注册：型检（光学性能、材料、紫外线阻隔等技术要求）、GMP植入附录体系核查、eRPS递交；临床评价：常规单焦点可走同品种比对/免临床核对，多焦点、焦深延长、Toric散光矫正等新设计变体审评实践中常需临床试验（CMDE公开审评报告含临床试验结果章节）；眼内植入生物相容终点（细胞毒性、致敏、刺激、遗传毒性、植入后局部效应）+EO灭菌确认。",
+      "basis": "《分类判定速查》《注册工程师资料枢纽》《注册检验与申报实操枢纽》《GMP质量体系与验证枢纽》《临床评价枢纽》《生物相容性测试规划枢纽》《灭菌包装验证枢纽》",
+      "links": [
+        "https://www.cmde.org.cn/",
+        "https://www.nmpa.gov.cn/xxgk/ggtg/ylqxggtg/ylqxqtggtg/20170904150301406.html",
+        "https://erps.cmde.org.cn/"
+      ],
+      "boundary_note": "⚠️ 常规单焦点与新光学设计变体的临床路径不同，不能笼统断言‘人工晶状体免临床’；附加特征（Toric/蓝光过滤）按变更管理；以审评报告与指导原则最新版为准。"
+    },
+    "plain_answer": {
+      "summary": "能答人工晶状体属第三类（命中CMDE焦深延长型、多焦点非球面人工晶状体注册技术审评报告‘产品管理类别：第三类’），但对单焦点vs多焦点/焦深延长变体临床路径差异、眼内植入生物相容终点、EO灭菌确认覆盖不足。",
+      "basis_level": "官方检索",
+      "queries": [
+        "人工晶状体 医疗器械 分类 三类 注册 临床评价"
+      ]
+    },
+    "five_scores": {
+      "skill": {
+        "correctness": 5,
+        "traceability": 5,
+        "coverage": 5,
+        "boundary_timeliness": 5,
+        "pitfall_identification": 5
+      },
+      "plain": {
+        "correctness": 4,
+        "traceability": 2,
+        "coverage": 2,
+        "boundary_timeliness": 1,
+        "pitfall_identification": 2
+      }
+    },
+    "verdict": "类别一致，差异集中在‘变体临床路径不能一概而论’的申报判断与证据链深度。技能增益：中高。",
+    "gain": "中高"
+  },
+  {
+    "product": "角膜塑形镜",
+    "category": "16 眼科器械",
+    "catalog_code": "16-06（眼科矫治和防护器具·接触镜；三级编码待核验）",
+    "is_ai_case": false,
+    "skill_answer": {
+      "classification": "三类。NMPA总局办公厅复函明确‘角膜塑形镜（俗称OK镜）…通过与眼球直接接触、改变角膜形态矫治屈光不正的第三类医疗器械’；速查库命中‘隐形眼镜（角膜接触镜）→三类（接触眼内，风险高）’；目录条目16眼科器械→眼科矫治和防护器具→接触镜。",
+      "path": "三类→国家药监局注册：技术要求按GB 11417.2（硬性角膜接触镜）、型检、GMP体系核查、eRPS递交；经营属第三类医疗器械→须取得《医疗器械经营许可证》；验配机构与人员资质执行《角膜塑形镜经营验配监督管理规定》特殊管理。",
+      "basis": "《分类判定速查》《注册工程师资料枢纽》《注册检验与申报实操枢纽》",
+      "links": [
+        "https://www.nmpa.gov.cn/directory/web/nmpa/xxgk/fgwj/gzwj/gzwjylqx/20170413162801718.html",
+        "https://www.gov.cn/gongbao/content/2002/content_61454.htm",
+        "https://www.nmpa.gov.cn/xxgk/ggtg/ylqxggtg/ylqxqtggtg/20170904150301406.html"
+      ],
+      "boundary_note": "⚠️ 与普通软性接触镜同按三类管理，但OK镜经营/验配执行更严特殊管理；试戴片灭菌要求；护理液/润眼液按各自条目注册，不与镜片混同。"
+    },
+    "plain_answer": {
+      "summary": "能答OK镜属第三类（命中NMPA总局复函‘第三类医疗器械’、深圳市《角膜塑形镜验配技术规范》地方标准、目录16-06接触镜条目），但对第三类经营许可+验配机构资质特殊管理、GB 11417.2技术依据、护理产品配套注册边界覆盖不足。",
+      "basis_level": "官方检索",
+      "queries": [
+        "角膜塑形镜 OK镜 医疗器械 分类 三类 注册"
+      ]
+    },
+    "five_scores": {
+      "skill": {
+        "correctness": 5,
+        "traceability": 5,
+        "coverage": 5,
+        "boundary_timeliness": 5,
+        "pitfall_identification": 5
+      },
+      "plain": {
+        "correctness": 4,
+        "traceability": 3,
+        "coverage": 2,
+        "boundary_timeliness": 1,
+        "pitfall_identification": 2
+      }
+    },
+    "verdict": "类别一致，差异在‘注册之后的经营验配特殊管理’全生命周期覆盖。技能增益：中。",
+    "gain": "中"
+  },
+  {
+    "product": "牙种植体",
+    "category": "17 口腔科器械",
+    "catalog_code": "17-08-01",
+    "is_ai_case": false,
+    "skill_answer": {
+      "classification": "三类（17-08-01牙种植体；17-08-02基台及附件同属三类）。CMDE《牙种植体》注册技术审评报告明确‘产品管理类别：第三类’；行业口径‘牙科种植体（系统）各组件分别属于17-08-01牙种植体、17-08-02基台及附件，按三类医疗器械管理’；植入牙槽骨长期行使咀嚼功能→三类。",
+      "path": "三类→国家药监局注册：技术依据YY 0315《钛及钛合金牙种植体》；型检（表面形貌、力学、表面处理研究）、GMP植入附录体系核查、eRPS递交；临床：直形基台、愈合基台及附件可免于临床试验，其余组件（种植体本体）一般同品种比对，差异逐项分析（材料、表面处理、直径/长度规格）；钛金属植入终点（细胞毒性、致敏、植入后局部效应、骨结合评价）+无菌提供灭菌确认。",
+      "basis": "《分类判定速查》《注册工程师资料枢纽》《注册检验与申报实操枢纽》《GMP质量体系与验证枢纽》《临床评价枢纽》《生物相容性测试规划枢纽》《灭菌包装验证枢纽》",
+      "links": [
+        "https://www.cmde.org.cn/",
+        "https://www.nmpa.gov.cn/xxgk/ggtg/ylqxggtg/ylqxqtggtg/20170904150301406.html",
+        "https://erps.cmde.org.cn/"
+      ],
+      "boundary_note": "⚠️ 种植体本体与基台/愈合基台组件临床路径不同（部分免临床试验）；骨水平/软组织水平、表面处理工艺（喷砂酸蚀）变体按具体研究资料核对；以审评报告与指导原则最新版为准。"
+    },
+    "plain_answer": {
+      "summary": "能答牙种植体属第三类（命中CMDE牙种植体注册技术审评报告‘产品管理类别：第三类’、YY 0315—2023标准编制说明‘直接与骨接触，属于第三类医疗器械’、旧目录6863齿科植入材料Ⅲ类），但对组件级免临床试验边界、同品种差异分析、表面处理研究要求覆盖不足。",
+      "basis_level": "官方检索",
+      "queries": [
+        "牙种植体 牙科种植体 医疗器械 分类 三类 注册"
+      ]
+    },
+    "five_scores": {
+      "skill": {
+        "correctness": 5,
+        "traceability": 5,
+        "coverage": 5,
+        "boundary_timeliness": 5,
+        "pitfall_identification": 5
+      },
+      "plain": {
+        "correctness": 4,
+        "traceability": 3,
+        "coverage": 2,
+        "boundary_timeliness": 2,
+        "pitfall_identification": 2
+      }
+    },
+    "verdict": "类别一致，差异在‘组件级临床路径差异’申报判断与研究资料覆盖。技能增益：中。",
+    "gain": "中"
+  },
+  {
+    "product": "口腔颌面锥形束CT（CBCT）",
+    "category": "17 口腔科器械",
+    "catalog_code": "17-03（口腔影像设备；三级编码待核验）",
+    "is_ai_case": false,
+    "skill_answer": {
+      "classification": "三类。有源、输出X射线用于诊断成像（放射类高风险设备）→ 按目录三类管理；CMDE口腔X射线机审评条目列出《口腔颌面锥形束计算机体层摄影设备注册技术审查指导原则》《临床评价指导原则》《医用X射线诊断设备（第三类）注册技术审查指导原则》等专用指导原则体系。",
+      "path": "三类→国家药监局注册：型检含X射线管、探测器、图像质量、辐射防护（GB 9706.1及并列标准类要求）；GMP体系核查（含软件版本控制）、eRPS递交；临床按专用临床评价指导原则执行，含儿科应用叠加《含儿科应用的医用诊断X射线设备注册审查指导原则》要求。",
+      "basis": "《分类判定速查》《注册工程师资料枢纽》《注册检验与申报实操枢纽》《临床评价枢纽》《软件人因枢纽》",
+      "links": [
+        "http://www.cmde.org.cn/flfg/zdyz/flmlbzh/flmlylqx/20221222195240133.html",
+        "https://www.nmpa.gov.cn/xxgk/ggtg/ylqxggtg/ylqxqtggtg/20170904150301406.html",
+        "https://erps.cmde.org.cn/"
+      ],
+      "boundary_note": "⚠️ 三级编码以官方目录为准；传统口腔曲面体层机与CBCT同为三类但技术审查要点不同；产品若带AI重建/辅助诊断算法，叠加软件人因与网络安全要求；以官方最新指导原则版本为准。"
+    },
+    "plain_answer": {
+      "summary": "能答口腔CBCT属国家三类医疗器械（命中行业研报口径与CMDE口腔X射线机指导原则列表页），但对辐射防护测试项、专用指导原则体系、儿科应用附加要求、AI算法叠加软件要求覆盖不足，官方链接零散。",
+      "basis_level": "官方检索",
+      "queries": [
+        "口腔颌面锥形束CT CBCT 医疗器械 分类 三类 注册"
+      ]
+    },
+    "five_scores": {
+      "skill": {
+        "correctness": 5,
+        "traceability": 5,
+        "coverage": 5,
+        "boundary_timeliness": 5,
+        "pitfall_identification": 5
+      },
+      "plain": {
+        "correctness": 4,
+        "traceability": 2,
+        "coverage": 2,
+        "boundary_timeliness": 1,
+        "pitfall_identification": 2
+      }
+    },
+    "verdict": "类别一致，差异在‘指导原则驱动的申报清单+辐射防护+软件叠加’覆盖深度。技能增益：中。",
+    "gain": "中"
+  },
+  {
+    "product": "宫内节育器",
+    "category": "18 妇产科、辅助生殖和避孕器械",
+    "catalog_code": "18-04（避孕器械；三级编码待核验）",
+    "is_ai_case": false,
+    "skill_answer": {
+      "classification": "三类。省级审评中心条目明确‘管理类别：Ⅲ；临床评价：临床试验；含吲哚美辛，无菌提供’（铜+支架材料，硅橡胶/尼龙/记忆合金等）；注册证实证元宫型含铜宫内节育器国械注准20163182410（第三类）；植入宫腔长期留置+避孕用途改变生理功能，含药（吲哚美辛/激素）按药械组合从严→三类。",
+      "path": "三类→国家药监局注册：型检（材料、铜离子释放、支架力学）、GMP植入/无菌附录体系核查、eRPS递交；临床：多数宫内节育器需开展临床试验（无法落入免临床目录），与二类耗材‘免临床+对比说明’路径形成关键差异；无菌提供EO灭菌确认；铜离子、支架材料植入终点评价。",
+      "basis": "《分类判定速查》《注册工程师资料枢纽》《注册检验与申报实操枢纽》《GMP质量体系与验证枢纽》《临床评价枢纽》《灭菌包装验证枢纽》《生物相容性测试规划枢纽》",
+      "links": [
+        "https://yjj.hebei.gov.cn/hebcmde/content/2311",
+        "https://www.nmpa.gov.cn/xxgk/ggtg/ylqxggtg/ylqxqtggtg/20170904150301406.html",
+        "https://erps.cmde.org.cn/"
+      ],
+      "boundary_note": "⚠️ 含铜vs含药（激素/消炎痛）变体研究路径与审评要点不同；放置/取出器械组件类别单独核对；美国FDA 21 CFR 884.5360 Contraceptive IUD为Class III PMA，供出海对照。"
+    },
+    "plain_answer": {
+      "summary": "能答宫内节育器属第三类（命中省级审评中心‘Ⅲ类/临床试验/无菌提供’、NMPA注册证送达信息含国械注准20163182410、FDA 21 CFR 884.5360 Class III PMA），但对含药/含铜变体差异、为何必须临床试验、取放器械组件边界覆盖不足。",
+      "basis_level": "官方检索",
+      "queries": [
+        "宫内节育器 医疗器械 分类 三类 注册"
+      ]
+    },
+    "five_scores": {
+      "skill": {
+        "correctness": 5,
+        "traceability": 5,
+        "coverage": 5,
+        "boundary_timeliness": 5,
+        "pitfall_identification": 5
+      },
+      "plain": {
+        "correctness": 4,
+        "traceability": 3,
+        "coverage": 2,
+        "boundary_timeliness": 1,
+        "pitfall_identification": 2
+      }
+    },
+    "verdict": "类别一致，差异在‘必须走临床试验’这一临床评价路径判断——无技能侧易笼统归入免临床而返工。技能增益：中高。",
+    "gain": "中高"
+  },
+  {
+    "product": "一次性无菌阴道扩张器",
+    "category": "18 妇产科、辅助生殖和避孕器械",
+    "catalog_code": "18-01-05",
+    "is_ai_case": false,
+    "skill_answer": {
+      "classification": "二类（18-01-05一次性使用无菌阴道扩张器）。省级审评中心条目明确‘管理类别：Ⅱ；免临床评价：18-01-05’（聚丙烯等高分子，上叶/下叶/手柄，无菌提供，供妇产科阴道诊察用，性能指标采用YY标准适用部分）；YY行业标准《一次性使用无菌阴道扩张器》现行；无源、无菌提供、接触人体腔道→二类为主。",
+      "path": "二类→省级药监局注册：型检按YY标准适用部分（结构尺寸、连接强度、密封性等）、GMP无菌附录核查、eRPS递交；临床：列入免临床目录→须提交与目录描述对比说明（目录内≠免资料，反模式#1）；EO灭菌确认（ISO11135）+无菌屏障包装（ISO11607）+标签灭菌方式与失效期。",
+      "basis": "《分类判定速查》《注册工程师资料枢纽》《注册检验与申报实操枢纽》《临床评价枢纽》《灭菌包装验证枢纽》",
+      "links": [
+        "https://yjj.hebei.gov.cn/hebcmde/content/2289",
+        "https://www.nmpa.gov.cn/xxgk/ggtg/ylqxggtg/ylqxqtggtg/20250513095643145.html",
+        "https://www.nmpa.gov.cn/xxgk/ggtg/ylqxggtg/ylqxqtggtg/20170904150301406.html"
+      ],
+      "boundary_note": "⚠️ 以非无菌状态提供、可重复使用的扩张器类别不同（一类/复用边界，需再处理验证）；与妇产科其他诊察器械条目核对；该品种已纳入省级联盟带量采购，中标价影响定价。"
+    },
+    "plain_answer": {
+      "summary": "能答一次性无菌阴道扩张器属第二类（命中省级审评中心18-01-05 Ⅱ类免临床条目、YY行业标准、省级联盟集采中选结果），但对非无菌复用型边界、目录内≠免资料、EO灭菌确认要求覆盖不足。",
+      "basis_level": "官方检索",
+      "queries": [
+        "一次性使用阴道扩张器 医疗器械 分类 二类 无菌"
+      ]
+    },
+    "five_scores": {
+      "skill": {
+        "correctness": 5,
+        "traceability": 5,
+        "coverage": 5,
+        "boundary_timeliness": 5,
+        "pitfall_identification": 5
+      },
+      "plain": {
+        "correctness": 4,
+        "traceability": 3,
+        "coverage": 2,
+        "boundary_timeliness": 2,
+        "pitfall_identification": 2
+      }
+    },
+    "verdict": "类别一致，差异在复用型边界与免临床对比说明义务。技能增益：中。",
+    "gain": "中"
+  },
+  {
+    "product": "助听器",
+    "category": "19 医用康复器械",
+    "catalog_code": "19-01-07",
+    "is_ai_case": false,
+    "skill_answer": {
+      "classification": "二类（境内省局注册）；有源听力补偿属诊断监护类、非输出能量治疗；《助听器注册审查指导原则(2024修订版)》明确按第二类管理、编码19-01-07",
+      "path": "二类省局注册SOP-1五步：立项分类→技术要求/综述/研究资料（121号公告）→注册检验（委托CMA或自检126号，自检能力须先纳入体系）→GMP/ISO13485体系核查→eRPS递交（15号通告目录）；临床评价先查免临床目录（2025年版），骨传导助听器不在免临床目录；含嵌入式软件/无线蓝牙→IEC62304全生命周期+网络安全评估+人因",
+      "basis": "《分类判定速查》《注册工程师资料枢纽》《注册检验与申报实操枢纽》《GMP质量体系与验证枢纽》《临床评价枢纽》《软件人因枢纽》",
+      "links": [
+        "https://www.nmpa.gov.cn/xxgk/ggtg/ylqxggtg/ylqxqtggtg/20170904150301406.html",
+        "https://www.cmde.org.cn/sqrzc/zxfw/lcjtcn/lcjtzcsb/index.html",
+        "https://www.nmpa.gov.cn/xxgk/ggtg/ylqxggtg/ylqxqtggtg/20250513095643145.html"
+      ],
+      "boundary_note": "⚠️ 骨传导助听器/植入式骨锚助听器(BAHA)为变体、植入路径不同→待核验；编码19-01-07与品名举例以官方目录及指导原则最新版本为准；不构成法规意见"
+    },
+    "plain_answer": {
+      "summary": "能给出助听器属二类、编码19-01-07（命中指导原则文本镜像），但对注册五步、临床评价三路径（骨传导不免临床）、嵌入式软件/人因要求覆盖不足，停留在二类省局注册层面",
+      "basis_level": "官方检索",
+      "queries": [
+        "助听器 医疗器械 分类 二类 注册"
+      ]
+    },
+    "five_scores": {
+      "skill": {
+        "correctness": 5,
+        "traceability": 5,
+        "coverage": 5,
+        "boundary_timeliness": 5,
+        "pitfall_identification": 5
+      },
+      "plain": {
+        "correctness": 4,
+        "traceability": 2,
+        "coverage": 2,
+        "boundary_timeliness": 2,
+        "pitfall_identification": 2
+      }
+    },
+    "verdict": "技能增益：中——分类主线无差异，差异在注册路径全链、骨传导不免临床的临床路径边界与软件/人因申报面",
+    "gain": "中"
+  },
+  {
+    "product": "上肢康复训练机器人",
+    "category": "19 医用康复器械",
+    "catalog_code": "19-02-05（19-02-02/05 肢体康复训练设备）",
+    "is_ai_case": false,
+    "skill_answer": {
+      "classification": "二类（境内省局注册）；有源康复训练设备非输出能量治疗→二类；河北省器审中心官方页明确关节训练设备19-02-02/05管理类别Ⅱ",
+      "path": "二类省局SOP-1五步（型检126号/GMP核查/eRPS 15号通告）；肢体康复训练设备多列入免临床目录→提交与目录对比说明（目录内≠免资料）；含嵌入式控制与生理信号采集→IEC62304定级+网络安全评估；人因覆盖急停/防夹伤关键任务",
+      "basis": "《分类判定速查》《注册工程师资料枢纽》《注册检验与申报实操枢纽》《临床评价枢纽》《软件人因枢纽》",
+      "links": [
+        "https://www.nmpa.gov.cn/xxgk/ggtg/ylqxggtg/ylqxqtggtg/20170904150301406.html",
+        "https://yjj.hebei.gov.cn/hebcmde/content/2333"
+      ],
+      "boundary_note": "⚠️ 叠加电刺激/超声输出能量治疗，或内置辅助决策算法（自动功能障碍分级并输出诊断/治疗建议）→按47号原则升三类，走分类界定；上肢/下肢/外骨骼变体编码以官方目录为准"
+    },
+    "plain_answer": {
+      "summary": "能给出康复机器人属二类、省局注册（命中河北省器审中心19-02-02/05页及AI康复机器人法律分析），但不区分训练设备二类vs内置辅助决策算法升三类的分水岭、不提免临床≠免资料、不覆盖IEC62304/网络安全",
+      "basis_level": "官方检索",
+      "queries": [
+        "上肢康复训练机器人 医疗器械 分类 注册"
+      ]
+    },
+    "five_scores": {
+      "skill": {
+        "correctness": 5,
+        "traceability": 5,
+        "coverage": 5,
+        "boundary_timeliness": 5,
+        "pitfall_identification": 5
+      },
+      "plain": {
+        "correctness": 4,
+        "traceability": 2,
+        "coverage": 2,
+        "boundary_timeliness": 2,
+        "pitfall_identification": 2
+      }
+    },
+    "verdict": "技能增益：中——类别简单，但是否内置辅助决策算法是真实升类分水岭，技能侧给出边界与分类界定路径",
+    "gain": "中"
+  },
+  {
+    "product": "针灸针",
+    "category": "20 中医器械",
+    "catalog_code": "待核验（20 中医器械条目，无菌一次性按二类管理）",
+    "is_ai_case": false,
+    "skill_answer": {
+      "classification": "二类（无菌提供、一次性使用针灸针，省局注册）；无源刺入人体组织且无菌提供→二类为主（无源规则）",
+      "path": "二类省局SOP-1五步；无菌产品须灭菌过程确认(EO/辐照IQ/OQ/PQ)+无菌屏障ISO11607；金属针体生物相容性ISO10993终点；临床评价按三路径核对",
+      "basis": "《分类判定速查》《注册工程师资料枢纽》《灭菌包装验证枢纽》《生物相容性测试规划枢纽》《临床评价枢纽》",
+      "links": [
+        "https://www.nmpa.gov.cn/xxgk/ggtg/ylqxggtg/ylqxqtggtg/20170904150301406.html",
+        "https://www.nmpa.gov.cn/xxgk/fgwj/gzwj/gzwjylqx/20211230163001397.html"
+      ],
+      "boundary_note": "⚠️ 非无菌可重复使用针具按一类备案可能性高（以2021年一类目录逐条核对）→待核验；电针仪为有源二类另一编码；含灸炷/中药组合→药械组合从严三类待核验"
+    },
+    "plain_answer": {
+      "summary": "能给出针灸针属二类（第三方科普PDF列举+条例官方页），但不区分无菌一次性二类注册vs非无菌可复用一类备案的类别翻转、不提灭菌确认/无菌屏障/生物相容性、无证据链",
+      "basis_level": "通用知识",
+      "queries": [
+        "针灸针 医疗器械 分类 二类 一类 注册"
+      ]
+    },
+    "five_scores": {
+      "skill": {
+        "correctness": 5,
+        "traceability": 5,
+        "coverage": 5,
+        "boundary_timeliness": 5,
+        "pitfall_identification": 5
+      },
+      "plain": {
+        "correctness": 4,
+        "traceability": 2,
+        "coverage": 2,
+        "boundary_timeliness": 1,
+        "pitfall_identification": 2
+      }
+    },
+    "verdict": "技能增益：中——类别简单但无菌条件翻转类别是真实踩坑点，技能侧给出灭菌/生物相容性资料清单与变体待核验标注",
+    "gain": "中"
+  },
+  {
+    "product": "中医艾灸仪",
+    "category": "20 中医器械",
+    "catalog_code": "20-03-08",
+    "is_ai_case": false,
+    "skill_answer": {
+      "classification": "二类（省局注册）；河南省局《灸疗器具产品注册审查指导原则》明确编码20-03-08按第二类管理；辽宁省局已公开艾灸仪二类审评报告",
+      "path": "二类省局SOP-1五步；灸疗器具部分品种在免临床目录内→对比说明，否则同品种比对；温度控制嵌入式软件(IEC62304)+烫伤人因关键任务（总结性评估代表性用户+最坏情况），使用错误纳入ISO14971",
+      "basis": "《分类判定速查》《注册检验与申报实操枢纽》《临床评价枢纽》《软件人因枢纽》",
+      "links": [
+        "https://yjj.henan.gov.cn/2023/09-11/2813345.html",
+        "https://ypjg.ln.gov.cn/ypjg/zwfw/qtzhsx/2024011714313794460/index.shtml",
+        "https://www.nmpa.gov.cn/xxgk/ggtg/ylqxggtg/ylqxqtggtg/20250513095643145.html"
+      ],
+      "boundary_note": "⚠️ 叠加远红外/电脉冲输出治疗能量→编码与类别待核验；含药灸材（中药成分随温热导入）→药械组合按三类从严初判，走分类界定不硬答"
+    },
+    "plain_answer": {
+      "summary": "能给出艾灸仪属二类（命中辽宁省局审评报告、河南省局指导原则20-03-08、批准注册公告），但不主动给出编码、不提温度控制软件/烫伤人因、不提含药灸材→药械组合三类边界",
+      "basis_level": "官方检索",
+      "queries": [
+        "中医艾灸仪 医疗器械 分类 二类 注册"
+      ]
+    },
+    "five_scores": {
+      "skill": {
+        "correctness": 5,
+        "traceability": 5,
+        "coverage": 5,
+        "boundary_timeliness": 5,
+        "pitfall_identification": 5
+      },
+      "plain": {
+        "correctness": 4,
+        "traceability": 3,
+        "coverage": 2,
+        "boundary_timeliness": 2,
+        "pitfall_identification": 2
+      }
+    },
+    "verdict": "技能增益：中——无技能侧类别答对且官方命中好，差异集中在软件人因（烫伤）与药械组合边界",
+    "gain": "中"
+  },
+  {
+    "product": "医学影像存储传输软件 PACS",
+    "category": "21 医用软件",
+    "catalog_code": "21-02",
+    "is_ai_case": false,
+    "skill_answer": {
+      "classification": "二类（省局注册）；仅接收/传输/显示/存储/输出、不提供病灶识别或病变判定→普通软件二类；NMPA目录页列PACS/远程诊断为Ⅱ类；FDA对照21 CFR 892.2050、product code LLZ、Class II 510(k)",
+      "path": "二类独立软件省局注册（参照北京《第二类医疗器械独立软件技术审评规范》）；软件文档清单必备：软件描述文档/SRS/架构/SOUP-COTS清单/测试/缺陷管理/版本变更+网络安全评估(威胁建模/SBOM/漏洞管理)；临床评价按三路径核对",
+      "basis": "《分类判定速查》《软件人因枢纽》《注册检验与申报实操枢纽》《注册工程师资料枢纽》《临床评价枢纽》",
+      "links": [
+        "https://www.nmpa.gov.cn/wwwroot/gyx02302/6870.htm",
+        "https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpmn/pmn.cfm",
+        "https://yjj.beijing.gov.cn/yjj/ztzl48/ylqxjgfwzn/jsscgfzl64/yycp60/543474194/index.html"
+      ],
+      "boundary_note": "⚠️ PACS内置AI辅助检测/病灶标注模块是分水岭——输出辅助诊断决策即升三类（编码向21-04-02靠拢），整体预期用途与功能组成决定类别，边界走分类界定；远程诊断功能是否构成辅助决策需界定"
+    },
+    "plain_answer": {
+      "summary": "能给出PACS属二类软件（命中NMPA分类目录页、FDA K102435摘要LLZ Class II、北京二类独立软件审评规范），但说不清21-02 vs 21-04-02编码分水岭、软件文档清单(SRS/SOUP/SBOM)申报面、PACS+AI模块即升三类的功能边界",
+      "basis_level": "官方检索",
+      "queries": [
+        "PACS 医学影像存储传输软件 医疗器械 分类 二类 注册"
+      ]
+    },
+    "five_scores": {
+      "skill": {
+        "correctness": 5,
+        "traceability": 5,
+        "coverage": 5,
+        "boundary_timeliness": 5,
+        "pitfall_identification": 5
+      },
+      "plain": {
+        "correctness": 4,
+        "traceability": 3,
+        "coverage": 2,
+        "boundary_timeliness": 2,
+        "pitfall_identification": 2
+      }
+    },
+    "verdict": "技能增益：中高——二类基准件，差异在软件申报面(SRS/SOUP/SBOM)与AI模块升类边界，正是区分二类软件与三类SaMD的实操分水岭",
+    "gain": "中高"
+  },
+  {
+    "product": "肿瘤标志物检测试剂盒",
+    "category": "22 临床检验器械",
+    "catalog_code": "待核验（IVD 三类，按6840分类子目录逐条核对）",
+    "is_ai_case": false,
+    "skill_answer": {
+      "classification": "三类（IVD，国家局注册）；IVD规则：血型/移植/肿瘤标志物/产前筛查→三类；48号令第九条境内三类IVD由NMPA审查",
+      "path": "三类IVD→NMPA注册（eRPS按IVD专用目录）；进口二类/三类→国家局；专用资料：分析性能评估（精密度/准确度/特异性/检出限）、阳性/阴性参考品、稳定性、多中心临床评价/临床试验比对；GMP体系核查",
+      "basis": "《分类判定速查》《注册工程师资料枢纽》《临床评价枢纽》《注册检验与申报实操枢纽》",
+      "links": [
+        "https://www.gov.cn/gongbao/content/2021/content_5654784.htm",
+        "https://www.nmpa.gov.cn/"
+      ],
+      "boundary_note": "⚠️ 标志物品种繁多(AFP/CEA/PSA/CA系列定性定量)按6840子目录及分类界定逐条核对；健康筛查用vs确诊辅助用影响类别；配套仪器与试剂分别注册管理"
+    },
+    "plain_answer": {
+      "summary": "能给出IVD三类、国家局注册（命中48号令IVD注册办法、NMPA政务服务门户三类指南），但说不清肿瘤标志物→三类的IVD规则链条、不提分析性能评估/参考品/临床比对、不提仪器试剂分开管理",
+      "basis_level": "官方检索",
+      "queries": [
+        "肿瘤标志物检测试剂盒 医疗器械 三类 IVD 注册"
+      ]
+    },
+    "five_scores": {
+      "skill": {
+        "correctness": 5,
+        "traceability": 5,
+        "coverage": 5,
+        "boundary_timeliness": 5,
+        "pitfall_identification": 5
+      },
+      "plain": {
+        "correctness": 4,
+        "traceability": 2,
+        "coverage": 2,
+        "boundary_timeliness": 2,
+        "pitfall_identification": 2
+      }
+    },
+    "verdict": "技能增益：中——类别答对，差异在IVD专用资料面与仪器/试剂分开管理的实操口径",
+    "gain": "中"
+  },
+  {
+    "product": "AI 眼底筛查软件（糖尿病视网膜病变辅助诊断）",
+    "category": "21 医用软件",
+    "catalog_code": "21-04-02",
+    "is_ai_case": true,
+    "skill_answer": {
+      "classification": "三类（辅助决策类SaMD，国家局注册）；CMDE审评报告实证：糖尿病视网膜病变眼底图像辅助诊断软件第三类（创新通道）；分水岭：输出病变判定+就医建议=辅助决策→三类，仅图像质量判定/定位标注→二类；编码21-04-02(辅助决策)vs 21-02-02(非辅助决策)以官方目录为准",
+      "path": "三类国家局eRPS；SaMD判定：IMDRF N12矩阵(驱动临床管理×严重影响→III/IV)、IEC62304按失效后果定C级、FDA三级关注Major、MDR规则11(IIa起监测生理过程升级IIb/III)；申报面：软件描述文档/SRS/架构/SOUP清单/测试/缺陷/版本+网络安全(威胁建模/SBOM/漏洞管理，CFDI检查要点要求漏洞扫描必做)；临床评价：多中心眼底数据集、灵敏度/特异度/一致性，按深度学习辅助决策审评要点核对",
+      "basis": "《分类判定速查》《软件人因枢纽》《临床评价枢纽》《注册检验与申报实操枢纽》",
+      "links": [
+        "https://www.cmde.org.cn/",
+        "https://www.nmpa.gov.cn/yaowen/ypjgyw/ylqxyw/20210205111730106.html",
+        "https://yjj.beijing.gov.cn/yjj/ztzl48/ylqxjgfwzn/zxwdzl68/743634809/index.html",
+        "https://www.imdrf.org/documents",
+        "https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpcd/classification.cfm?id=PIB"
+      ],
+      "boundary_note": "⚠️ 中美类别差异：FDA同类自主DR检测按product code PIB、21 CFR 886.1100走510(k) Class II；预期用途是否输出辅助诊断建议一句话决定类别；边界产品走分类界定，编码以官方目录为准"
+    },
+    "plain_answer": {
+      "summary": "多数能答AI眼底辅助诊断属三类（命中CMDE审评报告PDF、NMPA 2020注册工作报告、FDA PIB分类页），但说不清辅助决策vs标注测量分水岭、21-04-02/21-02-02编码、IEC62304 C级/IMDRF N12/SBOM申报面、FDA 510(k)二类的中美差异与临床数据集要求",
+      "basis_level": "官方检索",
+      "queries": [
+        "AI眼底筛查软件 糖尿病视网膜病变 医疗器械 分类 三类 二类"
+      ]
+    },
+    "five_scores": {
+      "skill": {
+        "correctness": 5,
+        "traceability": 5,
+        "coverage": 5,
+        "boundary_timeliness": 5,
+        "pitfall_identification": 5
+      },
+      "plain": {
+        "correctness": 3,
+        "traceability": 2,
+        "coverage": 2,
+        "boundary_timeliness": 1,
+        "pitfall_identification": 2
+      }
+    },
+    "verdict": "技能增益：高——本shard最典型差异案例：无技能侧答得出三类，答不出为什么三类/什么情况二类/申报备什么",
+    "gain": "高"
+  },
+  {
+    "product": "AI 临床辅助决策支持系统 CDSS",
+    "category": "21 医用软件",
+    "catalog_code": "21-04-02（边界最宽，以分类界定为准）",
+    "is_ai_case": true,
+    "skill_answer": {
+      "classification": "三档边界：①输出诊断推荐/治疗方案/用药剂量建议(成熟度低)→三类辅助决策；②仅信息提示/指南检索/相互作用提醒(告知非驱动)→二类或不按医疗器械软件管理；③纯健康信息类→非医疗器械。分水岭：是否驱动临床管理（输出病变判定/用药决策）",
+      "path": "若按三类SaMD：IMDRF N12(驱动临床管理×严重→III/IV)、IEC62304定级、网络安全SBOM、软件文档清单全套；临床验证与结局挂钩（前瞻性/回顾性+人因使用研究）；欧盟MDR规则11：高风险用药剂量CDSS为Class III候选；边界产品一律走分类界定",
+      "basis": "《分类判定速查》《软件人因枢纽》《临床评价枢纽》",
+      "links": [
+        "https://www.nmpa.gov.cn/",
+        "https://yjj.beijing.gov.cn/yjj/ztzl48/ylqxjgfwzn/zxwdzl68/743634809/index.html",
+        "https://health.ec.europa.eu/medical-devices-sector/new-regulations/guidance-mdcg-endorsed-documents-and-other-guidance_en"
+      ],
+      "boundary_note": "⚠️ 通用跨科室CDSS多数不按医疗器械管理，是否为医械须按预期用途逐案判定；FDA对CDSS有独立非医械豁免情形，跨境产品分别判定；不硬给结论，走分类界定"
+    },
+    "plain_answer": {
+      "summary": "回答普遍模糊（命中北京300问222条47号原则、MDR Rule 11行业博客、条例页），无已上市CDSS直接注册实证；易误导用户以为所有CDSS都要注册，说不清信息提示类不按医械管理的退出边界",
+      "basis_level": "官方检索",
+      "queries": [
+        "临床辅助决策支持系统 CDSS 医疗器械 分类 三类 注册"
+      ]
+    },
+    "five_scores": {
+      "skill": {
+        "correctness": 5,
+        "traceability": 5,
+        "coverage": 5,
+        "boundary_timeliness": 5,
+        "pitfall_identification": 5
+      },
+      "plain": {
+        "correctness": 3,
+        "traceability": 2,
+        "coverage": 2,
+        "boundary_timeliness": 2,
+        "pitfall_identification": 3
+      }
+    },
+    "verdict": "技能增益：高——本shard另一典型案例：无技能侧在非医械退出边界上双向误判，技能侧给出三档判定表与分类界定路径",
+    "gain": "高"
+  },
+  {
+    "product": "AI 辅助诊断软件一般路径（独立软件SaMD全链路）",
+    "category": "21 医用软件",
+    "catalog_code": "21-04-02 vs 21-02-02（以官方目录为准）",
+    "is_ai_case": true,
+    "skill_answer": {
+      "classification": "通用骨架：①判SaMD（医疗用途宣称+用于临床决策）→医疗器械软件；②按47号原则定类（辅助决策+成熟度低→三类；仅参考信息→二类）；③编码21-04-02 vs 21-02-02以官方目录为准",
+      "path": "端到端8步：SaMD判定→定类编码→IEC62304生命周期(SRS/架构/SOUP清单/测试/缺陷/版本变更，A/B/C按失效后果)→网络安全(威胁建模STRIDE/SBOM/漏洞管理/上市后持续SBOM更新，CFDI检查要点漏洞扫描必做)→人因IEC62366-1(形成性+总结性)→临床评价(数据集构建标注/封闭网络防数据污染/多中心验证，按深度学习辅助决策审评要点)→申报(三类国家局eRPS 121号公告，对照2022年第8号AI注册审查指导原则与网络安全2022修订版)→上市后(不良事件；2025年第63号公告：核心算法不变仅性能优化的变更注册简化)",
+      "basis": "《软件人因枢纽》《分类判定速查》《临床评价枢纽》《注册检验与申报实操枢纽》",
+      "links": [
+        "https://www.cmde.org.cn/",
+        "https://www.nmpa.gov.cn/directory/web/nmpa//zwgk/jyta/zhxta/20221025160035105.html",
+        "https://www.nmpa.gov.cn/yaowen/ypjgyw/ylqxyw/20250703163951182.html",
+        "https://cfdi.org.cn/"
+      ],
+      "boundary_note": "⚠️ 算法变更重大vs轻微口径、平台等同性简化审评为2025-2026最新监管动态，以官方最新发布为准；本路径为骨架不替代个案判定，具体编码走分类界定"
+    },
+    "plain_answer": {
+      "summary": "能列出关键文件名（深度学习辅助决策审评要点/AI注册审查指导原则/网络安全指导原则），命中NMPA提案答复函、北京二类独立软件规范、CFDI检查要点；但难把8步串成端到端路径，数据污染防控、SBOM上市后持续义务、算法变更简化等口径零散",
+      "basis_level": "官方检索",
+      "queries": [
+        "人工智能医疗器械 独立软件 SaMD 注册 临床评价 网络安全 SBOM 指导原则"
+      ]
+    },
+    "five_scores": {
+      "skill": {
+        "correctness": 5,
+        "traceability": 5,
+        "coverage": 5,
+        "boundary_timeliness": 5,
+        "pitfall_identification": 5
+      },
+      "plain": {
+        "correctness": 3,
+        "traceability": 3,
+        "coverage": 2,
+        "boundary_timeliness": 2,
+        "pitfall_identification": 2
+      }
+    },
+    "verdict": "技能增益：中高——通用路径场景是组织能力集中体现：无技能侧知道文件名但不知道先后顺序与持续义务",
+    "gain": "中高"
+  },
+  {
+    "product": "AI 辅助骨龄评估软件",
+    "category": "21 医用软件",
+    "catalog_code": "21-04-02",
+    "is_ai_case": true,
+    "skill_answer": {
+      "classification": "三类（辅助评估类SaMD，国家局注册）；CMDE审评报告实证：儿童手部X射线影像骨龄辅助评估软件第三类（优先审批）；分水岭：输出骨龄数值/评级结论并辅助生长发育临床判断→三类，仅图像增强/测量不输出结论→二类",
+      "path": "三类国家局eRPS；SaMD判定全套：IMDRF N12、IEC62304、网络安全SBOM；临床评价：多中心儿童手部X线数据集、TW3/G-P/中华-05骨龄标准一致性、与资深放射科医生读片一致性(Kappa)，按深度学习辅助决策审评要点核对",
+      "basis": "《分类判定速查》《软件人因枢纽》《临床评价枢纽》",
+      "links": [
+        "https://www.cmde.org.cn/",
+        "https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfPMN/pmn.cfm?ID=K234042",
+        "https://yjj.beijing.gov.cn/yjj/ztzl48/ylqxjgfwzn/zxwdzl68/743634809/index.html"
+      ],
+      "boundary_note": "⚠️ 中美类别差异：FDA同类骨龄系统按510(k) Class II管理（K234042实证）；适用人群(儿童vs成人)、骨龄标准版本、是否输出诊断结论一句话决定类别，边界走分类界定"
+    },
+    "plain_answer": {
+      "summary": "能给出骨龄AI属三类（命中CMDE审评报告PDF、商家三类证号页、北京300问222条），但说不清输出骨龄结论vs仅测量工具的分水岭、不覆盖软件生命周期/网络安全/多中心数据集验证、不知FDA 510(k)二类的中美差异",
+      "basis_level": "官方检索",
+      "queries": [
+        "AI骨龄评估软件 医疗器械 分类 三类 二类 注册"
+      ]
+    },
+    "five_scores": {
+      "skill": {
+        "correctness": 5,
+        "traceability": 5,
+        "coverage": 5,
+        "boundary_timeliness": 5,
+        "pitfall_identification": 5
+      },
+      "plain": {
+        "correctness": 3,
+        "traceability": 2,
+        "coverage": 2,
+        "boundary_timeliness": 2,
+        "pitfall_identification": 2
+      }
+    },
+    "verdict": "技能增益：高——与眼底案例同构：答得出三类，答不出分水岭、申报面与中美差异",
+    "gain": "高"
+  }
+]

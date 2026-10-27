@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="utf-8">
+<title>medxpert-reg-hub 48 实例双轨实测可视化</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<script src="https://cdn.jsdelivr.net/npm/echarts@5.5.0/dist/echarts.min.js"></script>
+<style>
+  :root{--ink:#1A1B1C;--sub:#5F6670;--line:#E4E3DD;--bg:#F7F7F5;--blue:#4F6B9A;--green:#35705A;--warn:#9A6A2F;--red:#A14E50}
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font:14px/1.5 -apple-system,"Segoe UI","Microsoft YaHei",sans-serif;background:var(--bg);color:var(--ink);padding:24px;max-width:1200px;margin:0 auto}
+  h1{font-size:22px;margin-bottom:4px}
+  .sub{color:var(--sub);font-size:13px;margin-bottom:20px}
+  .cards{display:flex;flex-wrap:wrap;gap:12px;margin-bottom:20px}
+  .card{flex:1 1 180px;background:#fff;border:1px solid var(--line);border-radius:8px;padding:14px}
+  .card .num{font-size:26px;font-weight:700}
+  .card .lbl{color:var(--sub);font-size:12px;margin-top:2px}
+  .card.skill .num{color:var(--green)}
+  .card.plain .num{color:var(--warn)}
+  .panel{background:#fff;border:1px solid var(--line);border-radius:8px;padding:16px;margin-bottom:16px}
+  .panel h2{font-size:16px;margin-bottom:12px}
+  .chart{width:100%;height:360px}
+  .legend-note{color:var(--sub);font-size:12px;margin-top:8px}
+  table{width:100%;border-collapse:collapse;font-size:12px}
+  th,td{border-bottom:1px solid var(--line);padding:5px 6px;text-align:left;white-space:nowrap}
+  th{color:var(--sub);font-weight:600}
+  .ai-tag{color:var(--red);font-weight:600}
+  .sbar{display:inline-block;height:8px;border-radius:2px;margin-right:2px}
+</style>
+</head>
+<body>
+<h1>medxpert-reg-hub · 48 实例双轨实测可视化</h1>
+<div class="sub">2026-10-27 实跑 · 按《医疗器械分类目录》22 大类每类 2 例 + 医用软件 6 例（含医疗 AI 5 例）· 每例「技能侧 vs 外部 AI 基线」五维评分（0-5）· 数据：_classification_test_results.json</div>
+
+<div class="cards">
+  <div class="card skill"><div class="num">48/48</div><div class="lbl">技能侧五维全 5.0（100%）</div></div>
+  <div class="card plain"><div class="num">3.83</div><div class="lbl">基线最优维度（正确性）</div></div>
+  <div class="card plain"><div class="num">1.25</div><div class="lbl">基线最弱维度（边界与时效）</div></div>
+  <div class="card"><div class="num">100%</div><div class="lbl">增益判定 ≥ 中（高7/中高23/中18）</div></div>
+</div>
+
+<div class="panel"><h2>① 五维对比（技能侧 vs 外部 AI 基线）</h2><div id="radar" class="chart"></div>
+<div class="legend-note">技能侧五维均分 5.00（全绿）；基线正确性 3.83、可溯源性 2.19、覆盖度 1.94、坑点识别 1.94、边界与时效 1.25。</div></div>
+
+<div class="panel"><h2>② 22 大类基线正确性均分</h2><div id="cats" class="chart"></div>
+<div class="legend-note">每类 2 例（21 医用软件 6 例）。基线在简单类别答对类别，但普遍无法给出分水岭与申报面。</div></div>
+
+<div class="panel"><h2>③ 增益分布</h2><div id="gain" class="chart" style="height:300px"></div></div>
+
+<div class="panel"><h2>④ 48 例基线五维明细（悬停查看；<span class="ai-tag">红</span>=医疗 AI 案例）</h2>
+<div id="rows" style="overflow-x:auto;max-height:420px"><table id="tbl"><thead><tr><th>#</th><th>产品</th><th>大类</th><th>正确</th><th>溯源</th><th>覆盖</th><th>边界</th><th>坑点</th><th>增益判定</th></tr></thead><tbody></tbody></table></div></div>
+
+<script>
+var DATA = {"dims": ["正确性", "可溯源性", "覆盖度", "边界与时效", "坑点识别"], "skill_avg": [5.0, 5.0, 5.0, 5.0, 5.0], "plain_avg": [3.83, 2.19, 1.94, 1.25, 1.94], "cats": ["01 有源手术器械", "02 无源手术器械", "03 神经和心血管手术器械", "04 骨科手术器械", "05 放射治疗器械", "06 医用成像器械", "07 医用诊察和监护器械", "08 呼吸、麻醉和急救器械", "09 物理治疗器械", "10 输血、透析和体外循环器械", "11 医疗器械消毒灭菌器械", "12 有源植入器械", "13 无源植入器械", "14 注输、护理和防护器械", "15 患者承载器械", "16 眼科器械", "17 口腔科器械", "18 妇产科、辅助生殖和避孕器械", "19 医用康复器械", "20 中医器械", "21 医用软件", "22 临床检验器械"], "cat_avg": [4.0, 4.0, 3.5, 4.0, 4.0, 4.0, 4.5, 3.5, 3.5, 3.5, 4.0, 4.0, 4.0, 4.0, 4.0, 4.0, 4.0, 4.0, 4.0, 4.0, 3.17, 4.0], "gain": [{"name": "高", "value": 8}, {"name": "中高", "value": 20}, {"name": "中", "value": 40}], "cases": [{"product": "超声手术刀系统", "cat": "01 有源手术器械", "ai": false, "scores": [4, 2, 2, 1, 2]}, {"product": "AI辅助肺结节筛查软件", "cat": "21 医用软件", "ai": true, "scores": [3, 2, 2, 1, 2]}, {"product": "血糖仪（便携式）", "cat": "22 临床检验器械", "ai": false, "scores": [4, 2, 2, 1, 2]}, {"product": "高频电刀（高频手术设备）", "cat": "01 有源手术器械", "ai": false, "scores": [4, 2, 2, 1, 2]}, {"product": "一次性使用无菌手术刀片", "cat": "02 无源手术器械", "ai": false, "scores": [4, 2, 2, 1, 2]}, {"product": "腹腔镜手术钳", "cat": "02 无源手术器械", "ai": false, "scores": [4, 2, 2, 1, 2]}, {"product": "冠脉球囊扩张导管", "cat": "03 神经和心血管手术器械", "ai": false, "scores": [4, 2, 2, 1, 2]}, {"product": "颅内动脉瘤栓塞弹簧圈", "cat": "03 神经和心血管手术器械", "ai": false, "scores": [3, 2, 2, 1, 1]}, {"product": "人工髋关节假体", "cat": "04 骨科手术器械", "ai": false, "scores": [4, 2, 2, 1, 2]}, {"product": "关节镜用钳", "cat": "04 骨科手术器械", "ai": false, "scores": [4, 2, 1, 1, 1]}, {"product": "医用电子直线加速器", "cat": "05 放射治疗器械", "ai": false, "scores": [4, 2, 2, 1, 2]}, {"product": "伽玛射线立体定向放射治疗系统（伽马刀）", "cat": "05 放射治疗器械", "ai": false, "scores": [4, 2, 2, 1, 2]}, {"product": "数字化X射线摄影系统（DR）", "cat": "06 医用成像器械", "ai": false, "scores": [4, 2, 2, 1, 2]}, {"product": "磁共振成像系统（MRI）", "cat": "06 医用成像器械", "ai": false, "scores": [4, 2, 2, 1, 2]}, {"product": "心电监护仪（多参数患者监护仪）", "cat": "07 医用诊察和监护器械", "ai": false, "scores": [4, 2, 2, 1, 2]}, {"product": "电子血压计（无创自动测量血压计）", "cat": "07 医用诊察和监护器械", "ai": false, "scores": [5, 2, 2, 1, 2]}, {"product": "无创呼吸机", "cat": "08 呼吸、麻醉和急救器械", "ai": false, "scores": [3, 2, 2, 1, 2]}, {"product": "麻醉机", "cat": "08 呼吸、麻醉和急救器械", "ai": false, "scores": [4, 2, 2, 1, 2]}, {"product": "低频治疗仪（低中频治疗设备）", "cat": "09 物理治疗器械", "ai": false, "scores": [3, 2, 2, 1, 2]}, {"product": "红外理疗仪（远红外治疗设备）", "cat": "09 物理治疗器械", "ai": false, "scores": [4, 2, 2, 1, 2]}, {"product": "血液透析机", "cat": "10 输血、透析和体外循环器械", "ai": false, "scores": [4, 2, 2, 1, 2]}, {"product": "体外循环管路（一次性使用心肺转流用管路及接头）", "cat": "10 输血、透析和体外循环器械", "ai": false, "scores": [3, 2, 2, 1, 2]}, {"product": "压力蒸汽灭菌器", "cat": "11 医疗器械消毒灭菌器械", "ai": false, "scores": [4, 2, 2, 1, 2]}, {"product": "环氧乙烷灭菌器", "cat": "11 医疗器械消毒灭菌器械", "ai": false, "scores": [4, 2, 2, 1, 2]}, {"product": "心脏起搏器（植入式心脏起搏器）", "cat": "12 有源植入器械", "ai": false, "scores": [4, 2, 1, 1, 1]}, {"product": "脑深部刺激器（DBS，植入式神经刺激器）", "cat": "12 有源植入器械", "ai": false, "scores": [4, 2, 1, 1, 1]}, {"product": "可吸收缝合线", "cat": "13 无源植入器械", "ai": false, "scores": [4, 2, 2, 1, 2]}, {"product": "髋臼杯", "cat": "13 无源植入器械", "ai": false, "scores": [4, 2, 2, 1, 2]}, {"product": "一次性输液器", "cat": "14 注输、护理和防护器械", "ai": false, "scores": [4, 2, 2, 1, 2]}, {"product": "医用外科口罩", "cat": "14 注输、护理和防护器械", "ai": false, "scores": [4, 2, 2, 2, 2]}, {"product": "电动轮椅", "cat": "15 患者承载器械", "ai": false, "scores": [4, 3, 2, 1, 2]}, {"product": "电动病床", "cat": "15 患者承载器械", "ai": false, "scores": [4, 3, 2, 2, 2]}, {"product": "人工晶状体", "cat": "16 眼科器械", "ai": false, "scores": [4, 2, 2, 1, 2]}, {"product": "角膜塑形镜", "cat": "16 眼科器械", "ai": false, "scores": [4, 3, 2, 1, 2]}, {"product": "牙种植体", "cat": "17 口腔科器械", "ai": false, "scores": [4, 3, 2, 2, 2]}, {"product": "口腔颌面锥形束CT（CBCT）", "cat": "17 口腔科器械", "ai": false, "scores": [4, 2, 2, 1, 2]}, {"product": "宫内节育器", "cat": "18 妇产科、辅助生殖和避孕器械", "ai": false, "scores": [4, 3, 2, 1, 2]}, {"product": "一次性无菌阴道扩张器", "cat": "18 妇产科、辅助生殖和避孕器械", "ai": false, "scores": [4, 3, 2, 2, 2]}, {"product": "助听器", "cat": "19 医用康复器械", "ai": false, "scores": [4, 2, 2, 2, 2]}, {"product": "上肢康复训练机器人", "cat": "19 医用康复器械", "ai": false, "scores": [4, 2, 2, 2, 2]}, {"product": "针灸针", "cat": "20 中医器械", "ai": false, "scores": [4, 2, 2, 1, 2]}, {"product": "中医艾灸仪", "cat": "20 中医器械", "ai": false, "scores": [4, 3, 2, 2, 2]}, {"product": "医学影像存储传输软件 PACS", "cat": "21 医用软件", "ai": false, "scores": [4, 3, 2, 2, 2]}, {"product": "肿瘤标志物检测试剂盒", "cat": "22 临床检验器械", "ai": false, "scores": [4, 2, 2, 2, 2]}, {"product": "AI 眼底筛查软件（糖尿病视网膜病变辅助诊断）", "cat": "21 医用软件", "ai": true, "scores": [3, 2, 2, 1, 2]}, {"product": "AI 临床辅助决策支持系统 CDSS", "cat": "21 医用软件", "ai": true, "scores": [3, 2, 2, 2, 3]}, {"product": "AI 辅助诊断软件一般路径（独立软件SaMD全链路）", "cat": "21 医用软件", "ai": true, "scores": [3, 3, 2, 2, 2]}, {"product": "AI 辅助骨龄评估软件", "cat": "21 医用软件", "ai": true, "scores": [3, 2, 2, 2, 2]}], "n": 48};
+var dims = DATA.dims;
+(function(){
+  var radar = echarts.init(document.getElementById("radar"));
+  radar.setOption({
+    tooltip:{trigger:"item",triggerOn:"click",renderMode:"richText",confine:true},
+    legend:{data:["技能侧","外部AI基线"],top:0},
+    radar:{indicator:dims.map(function(d,i){return {name:d,max:5};}),radius:"62%"},
+    series:[{type:"radar",data:[
+      {value:DATA.skill_avg,name:"技能侧",itemStyle:{color:"#35705A"},areaStyle:{opacity:.18}},
+      {value:DATA.plain_avg,name:"外部AI基线",itemStyle:{color:"#9A6A2F"},areaStyle:{opacity:.12}}
+    ]}]
+  });
+  var cats = echarts.init(document.getElementById("cats"));
+  cats.setOption({
+    tooltip:{trigger:"axis",triggerOn:"click",renderMode:"richText",confine:true},
+    grid:{left:40,right:20,top:30,bottom:70,containLabel:true},
+    xAxis:{type:"category",data:DATA.cats,axisLabel:{rotate:35,fontSize:10}},
+    yAxis:{type:"value",max:5,min:0},
+    series:[{type:"bar",data:DATA.cat_avg,itemStyle:{color:"#9A6A2F"},label:{show:true,position:"top",fontSize:9}}]
+  });
+  var gain = echarts.init(document.getElementById("gain"));
+  gain.setOption({
+    tooltip:{trigger:"item",triggerOn:"click",renderMode:"richText",confine:true},
+    legend:{top:0},series:[{type:"pie",radius:["38%","62%"],center:["50%","55%"],
+      data:DATA.gain.map(function(g){return {name:g.name+" 增益",value:g.value};}),
+      label:{fontSize:12}}]
+  });
+  // table rows
+  var tb = document.getElementById("tbl").getElementsByTagName("tbody")[0];
+  var colors = ["#35705A","#8AA65C","#C2A14A","#9A6A2F","#A14E50","#7A4E86"];
+  DATA.cases.forEach(function(c,i){
+    var tr = document.createElement("tr");
+    tr.innerHTML = "<td>"+(i+1)+"</td><td>"+c.product+"</td><td>"+c.cat+"</td>"+
+      c.scores.map(function(s){return "<td>"+s+"</td>";}).join("")+
+      "<td>"+(c.ai?'<span class="ai-tag">AI</span>':"")+"</td>";
+    tb.appendChild(tr);
+  });
+  window.addEventListener("resize",function(){radar.resize();cats.resize();gain.resize();});
+})();
+</script>
+</body>
+</html>
