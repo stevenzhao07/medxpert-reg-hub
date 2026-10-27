@@ -1,29 +1,50 @@
 # medxpert-reg-hub · 医械全球注册合规技能聚合包
-
 > **Medical Device Global Regulatory Compliance Skill Hub** — 医疗器械全球注册合规的**结构化资料枢纽**（Agent Skills 标准格式），把 NMPA / FDA / EU MDR / PMDA 及各市场官网的法规、标准、申报系统、模板，按「市场 × 注册阶段 × 产品类别」整理成可点击直达的官方源。
 
+> ⭐ **如果 medxpert-reg-hub 对你有帮助，点一个 Star 就是最大的支持！** ⭐
+> ⭐ **If medxpert-reg-hub helps you, a star means a lot!** ⭐
+
+**Language / 语言**：**[English](README.en.md)** ｜ **[中文](README.md)**
+
+![License](https://img.shields.io/badge/License-MIT-blue.svg)
+![Platform](https://img.shields.io/badge/Platform-WorkBuddy%20%7C%20Claude%20Code%20%7C%20Cursor%20%7C%20DSH%20%7C%20MCP-4f6b9a)
+![Version](https://img.shields.io/badge/Version-2.0.1-green)
+[![GitHub Release](https://img.shields.io/github/v/release/stevenzhao07/medxpert-reg-hub?logo=github)](https://github.com/stevenzhao07/medxpert-reg-hub/releases)
+[![Stars](https://img.shields.io/github/stars/stevenzhao07/medxpert-reg-hub)](https://github.com/stevenzhao07/medxpert-reg-hub)
+[![Downloads](https://img.shields.io/github/downloads/stevenzhao07/medxpert-reg-hub/total)](https://github.com/stevenzhao07/medxpert-reg-hub/releases)
+[![Discussions](https://img.shields.io/badge/Discussions-join-1a7f37)](https://github.com/stevenzhao07/medxpert-reg-hub/discussions)
+
 ---
+## 方法论底座 · LGD 互链 / Methodology · LGD Ecosystem
+> 本技能按 **LGD（Lifecycle Governance Doctrine / 全程治理论 · 凡自治之物：有籍·有证·有门禁）** 方法论底座构建，是 LGD 在**医疗器械注册域**的落地示例（reference implementation）。
+> - 理论仓（Theory repo）：[zhaoxinghua09-cell/lgd-theory](https://github.com/zhaoxinghua09-cell/lgd-theory)（概念 DOI 10.5281/zenodo.22456647，AI 索引见其 `llms.txt`）
+> - 本技能落地：28 枢纽 / 119 条官方链接浏览器级核验 / 48 实例双轨评测（见下），全程按"有籍·有证·有门禁"治理。
+> ![LGD-Powered](https://raw.githubusercontent.com/zhaoxinghua09-cell/lgd-theory/main/assets/badges/powered/lgd-powered-en.svg)
 
+---
 ## What is this? / 这是什么
-
 **EN** — A structured regulatory-intelligence hub for medical-device regulatory affairs (RA) engineers. 28 references organize official sources from NMPA / FDA / EU MDR / PMDA / ASEAN / LATAM by *market × registration phase × product category*, covering the full lifecycle: product planning → classification & pathway → technical files → QMS → submission → review & clearance → post-market. Every conclusion links to official sources; boundaries are honestly flagged as "to be verified / apply for classification determination" rather than guessed. Includes a zero-dependency CLI and a read-only DSH plugin / MCP server.
-
 **CN** — 医疗器械注册工程师的**结构化资料枢纽**。把分散在 NMPA / FDA / EU MDR / PMDA 及各市场官网的法规、标准、申报系统、模板，按「市场 × 注册阶段 × 产品类别」整理成可点击直达的官方源。覆盖从**产品立项 → 分类与路径 → 技术文件 → 质量体系 → 注册申报 → 审评获批 → 上市后**的全流程。每个结论附官方直达链接，边界情形明确标注"待核验 / 走分类界定"，不误导。
 
 ---
+## 为什么用它 / Why medxpert-reg-hub
+| 对比对象 | 差异（有实测证据，2026-10-27 双轨 48 实例） |
+|---|---|
+| vs 官网手工翻 | 28 枢纽按市场×阶段×类别预整理，119 条官方链接已逐条浏览器级核验，免去逐站摸索 |
+| vs 普通 AI 直搜 | 正确性 5.00 vs 3.83 ｜ 可溯源 5.00 vs 2.19 ｜ 覆盖度 5.00 vs 1.94 ｜ 边界时效 5.00 vs 1.25 ｜ 坑点识别 5.00 vs 1.94（全维领先） |
+| vs 同类技能 | 中英双语信息齐全、全生命周期 7 阶段覆盖、免 API Key 零数据收集、CLI/MCP/DSH 三形态即装即用 |
 
+---
 ## 全生命周期 7 阶段 · 28 枢纽 / Lifecycle: 7 phases, 28 hubs
-
 ```text
 需求立项 → 分类路径 → 技术文件 → 质量体系 → 注册申报 → 审评获批 → 上市后
-    │          │          │          │          │          │          │
-  立项/需求    NMPA/     STED/CTD   GMP/ISO    eRPS/      审评时限    PMS/UDI/
-   调研        FDA/MDR   撰写       13485      申报实操    核查获证    上市后监管
-    └─────────────── 覆盖中/美/欧/日/东南亚/拉美 ─────────────────┘
+│          │          │          │          │          │          │
+立项/需求    NMPA/     STED/CTD   GMP/ISO    eRPS/      审评时限    PMS/UDI/
+调研        FDA/MDR   撰写       13485      申报实操    核查获证    上市后监管
+└─────────────── 覆盖中/美/欧/日/东南亚/拉美 ─────────────────┘
 ```
-
 | # | Hub (EN) / 枢纽（中文） | 用途 Purpose |
-|---|---|---|
+| --- | --- | --- |
 | 1 | 注册工程师资料枢纽 · RA Engineer Hub（主索引） | 中/美/欧/日及全球主要市场，按 7 阶段排列的官方资料直达 |
 | 2 | 枢纽总览·全生命周期 7 阶段纲领 · Lifecycle Overview | 7 阶段总纲：需求立项→分类路径→技术文件→质量体系→注册申报→审评获批→上市后 |
 | 3 | UDI 全球标识枢纽 · Global UDI | 中美欧 UDI 规则、发码机构、数据库 |
@@ -54,13 +75,10 @@
 | 28 | 市场实务（UDI 实施 / MDR PMS / MAH 委托生产 / FDA 供应链穿透）· Market Practices | 中美欧实务专题：EUDAMED 结构、GUDID、Art.83-92 PMS、MAH 委托、供应链核查 |
 
 ---
-
 ## 实测结果 / Evaluation（2026-10-27 双轨 48 实例全量实跑）
-
 > **口径**：按《医疗器械分类目录》22 个大类（01–22）每类实跑 2 例 + 医疗 AI 类 5 例（医用软件类 6 例），共 **48 实例**；每例同时以「**技能侧**（本包加载）」与「**无技能侧**（通用 AI + 直接搜索）」作答，五维评分（正确性 / 可溯源性 / 覆盖度 / 边界与时效 / 坑点识别）。
-
 | 维度 Dimension | 技能侧 With skill | 无技能侧 Without skill |
-|---|---|---|
+| --- | --- | --- |
 | 正确性 Correctness | **5.00** | 3.83 |
 | 可溯源性 Traceability | **5.00** | 2.19 |
 | 覆盖度 Coverage | **5.00** | 1.94 |
@@ -73,9 +91,7 @@
 - ⚠️ **诚实标注**：以上为**本包自建的内部双轨评测**（对比基线=通用 AI 直搜），非第三方机构认证；评测原始数据见仓库 `EVALUATION/`（48 例明细）。
 
 ---
-
 ## 安装 / Install
-
 **npm（CLI + 技能包）**
 ```sh
 npm install -g medxpert-reg-hub        # CLI + skill bundle
@@ -83,46 +99,42 @@ medxpert info                          # 查看导航 / show navigation
 medxpert quick 关节镜                   # 关键词速查 / keyword lookup
 medxpert check-links                   # 官方链接核验 / verify official links
 ```
-
 **DeepSeek Harness 插件**
 ```sh
 dsh plugin --profile web add medxpert-reg-hub
 ```
-
 **MCP Server（UDI / 510k / PMA / 分类 / 枢纽检索，5 只读工具）**
 ```sh
 npx medxpert-reg-hub-mcp   # 或按 mcp/server.json 配置
 ```
-
 **Claude Code / Codex / Cursor / 千问 / Kimi Claw / 智谱 Auto Claw**
 把 `skills/` 目录放入 `.claude/skills/`（或 `.cursor/skills/`、对应生态 skills 目录）即可——SKILL.md 为标准 Agent Skills 格式，全生态原生加载。
 
 ---
-
 ## 目录结构 / Structure
-
 ```
 skills/
-  SKILL.md          技能主文件（中英双语：触发/工作流/SOP/反模式/边界）
-  references/       28 枢纽（含英文摘要导航）
-  assets/           全景图 overview.svg + 分类速查工具.html
+SKILL.md          技能主文件（中英双语：触发/工作流/SOP/反模式/边界）
+references/       28 枢纽（含英文摘要导航）
+assets/           全景图 overview.svg + 分类速查工具.html
 bin/medxpert.js     CLI（零依赖）
 src/index.js        DSH 插件入口（只读工具）
 mcp/server.py       MCP server（5 只读工具）
 ```
 
+---
 ## 官方链接核验 / Link Verification
-
 - 119 条官方链接经浏览器级复核（2026-08-14；2026-08-18 增补实务文件后已复核），死链率趋近于零（EUDAMED 旧入口偶发维护、器审中心为 JS 渲染站，均非死链）。
 - FDA/ISO 官网对脚本探测返 404/403 属反爬正常现象，浏览器可正常打开；判定失效以浏览器级核验为准。
 
+---
 ## 收录状态 / Distribution
-
 - GitHub 仓库：`github.com/stevenzhao07/medxpert-reg-hub`（topic: `dsh-plugin`，Release v2.0.1 + 预构建 tgz）
 - awesome-dsh-plugin 收录条目已备（category: skill，tarball 指向 GitHub Release）
 - MCP Registry / Glama / mcp.so / Smithery / SkillHub / 豆包技能中心 素材已就绪
 - 官网公开层：`https://medxpert.cn/knowledge/`（20+ 枢纽在线可读、AI 可访问）
+- AI 友好索引：本技能 `llms.txt` 附于 SkillHub 发布副本，AI 检索/引用按该文件定位与触发词使用
 
+---
 ## 许可 / License
-
 MIT License © 注册老炮 @ MedXpert。内容为公开官方信息整理，**不构成法规意见**；实际申报以监管机构最新发布与专业 RA 判断为准。
