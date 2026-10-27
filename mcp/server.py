@@ -163,5 +163,10 @@ def hub_search(keyword: str) -> str:
     return json.dumps({"total": len(hits), "top": top}, ensure_ascii=False)
 
 
-if __name__ == "__main__":
+def main():
+    """Console entry point (stdio MCP server)."""
     mcp.run()
+
+
+if __name__ == "__main__":
+    main()

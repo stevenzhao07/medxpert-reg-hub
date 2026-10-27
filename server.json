@@ -1,0 +1,39 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.stevenzhao07/medxpert-reg-hub",
+  "title": "MedXpert Regulatory Hub",
+  "description": "Read-only medical device regulatory data: NMPA UDI, FDA 510(k)/PMA/classification lookups.",
+  "version": "2.0.1",
+  "websiteUrl": "https://medxpert.cn",
+  "repository": {
+    "url": "https://github.com/stevenzhao07/medxpert-reg-hub",
+    "source": "github",
+    "id": "1435394103",
+    "subfolder": "mcp"
+  },
+  "packages": [
+    {
+      "registryType": "pypi",
+      "identifier": "medxpert-reg-hub",
+      "version": "2.0.1",
+      "registryBaseUrl": "https://pypi.org",
+      "transport": { "type": "stdio" },
+      "environmentVariables": [
+        {
+          "name": "MEDXPERT_DB",
+          "description": "SQLite database path (NMPA UDI / FDA 510(k) / PMA / classification data)",
+          "isRequired": false,
+          "isSecret": false,
+          "format": "string"
+        },
+        {
+          "name": "MEDXPERT_REFS",
+          "description": "Path to the references knowledge-base directory (20 hubs)",
+          "isRequired": false,
+          "isSecret": false,
+          "format": "string"
+        }
+      ]
+    }
+  ]
+}
