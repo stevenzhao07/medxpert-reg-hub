@@ -137,4 +137,6 @@ mcp/server.py       MCP server（5 只读工具）
 
 ---
 ## 许可 / License
-MIT License © 注册老炮 @ MedXpert。内容为公开官方信息整理，**不构成法规意见**；实际申报以监管机构最新发布与专业 RA 判断为准。
+代码许可 (code license) : MIT (see LICENSE)
+© 2026 赵兴华 / Steven Zhao (ORCID 0009-0001-0512-1237). All rights reserved.
+内容为公开官方信息整理，**不构成法规意见**；实际申报以监管机构最新发布与专业 RA 判断为准。
