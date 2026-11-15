@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="128" height="128" role="img" aria-label="MedXpert Regulatory Hub">
+  <title>MedXpert Regulatory Hub</title>
+  <rect x="4" y="4" width="120" height="120" rx="24" ry="24" fill="#0B2545"/>
+  <rect x="4" y="4" width="120" height="120" rx="24" ry="24" fill="none" stroke="#13315C" stroke-width="3"/>
+  <path d="M64 22 L100 36 L100 68 C100 90 82 103 64 108 C46 103 28 90 28 68 L28 36 Z"
+        fill="#13315C" stroke="#8DA9C4" stroke-width="2"/>
+  <path d="M56 42 L56 56 L42 56 L42 72 L56 72 L56 86 L72 86 L72 72 L86 72 L86 56 L72 56 L72 42 Z"
+        fill="#EEF4ED"/>
+  <path d="M30 98 L44 98 L50 88 L58 108 L66 82 L72 98 L98 98"
+        fill="none" stroke="#4FD1C5" stroke-width="4" stroke-linejoin="round"/>
+  <circle cx="98" cy="98" r="3.5" fill="#F6C445"/>
+</svg>
