@@ -17,6 +17,8 @@
 import os
 import json
 import sqlite3
+from importlib.metadata import PackageNotFoundError, version as _pkg_version
+
 from mcp.server.mcpserver import MCPServer
 
 DEFAULT_DB = r"D:\Workbuddy\02-知识库\MedXpert-RA-Data\db\medxpert_device.sqlite"
@@ -25,7 +27,24 @@ DEFAULT_REFS = r"D:\Workbuddy\08-理论体系\发布\技能治理\medxpert-reg-h
 DB = os.environ.get("MEDXPERT_DB", DEFAULT_DB)
 REFS = os.environ.get("MEDXPERT_REFS", DEFAULT_REFS)
 
-mcp = MCPServer("medxpert-reg-hub", instructions="医疗器械全球注册合规数据查询：NMPA UDI、FDA 510(k)/PMA/分类、枢纽知识库速查。只读。")
+
+def _version() -> str:
+    """服务端版本必须等于实际安装的包版本。
+
+    MCPServer 的 version 默认是空字符串，握手会在 serverInfo.version 里回一个空值 ——
+    客户端据此无法判断跑的是哪个版本。这里从安装元数据取，源码直跑时回退到 0.0.0。
+    """
+    try:
+        return _pkg_version("medxpert-reg-hub")
+    except PackageNotFoundError:
+        return "0.0.0"
+
+
+mcp = MCPServer(
+    "medxpert-reg-hub",
+    version=_version(),
+    instructions="医疗器械全球注册合规数据查询：NMPA UDI、FDA 510(k)/PMA/分类、枢纽知识库速查。只读。",
+)
 
 _MAX = 20
 
