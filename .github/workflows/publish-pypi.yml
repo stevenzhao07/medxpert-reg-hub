@@ -1,7 +1,7 @@
 name: Publish PyPI
 
 # Trusted Publishing（OIDC 零 token）优先；若 PyPI 侧尚未注册 pending publisher，
-# 自动回退到仓库密钥 PYPI_API_TOKEN，避免出现"构建成功、发布失败"的空转流水线。
+# 回退到仓库密钥 PYPI_API_TOKEN。最后一步回读 PyPI，杜绝"报成功但没发出去"。
 on:
   release:
     types: [published]
@@ -18,7 +18,7 @@ concurrency:
 jobs:
   publish:
     runs-on: ubuntu-latest
-    timeout-minutes: 15
+    timeout-minutes: 20
     environment: pypi
     env:
       UV_PUBLISH_TOKEN: ${{ secrets.PYPI_API_TOKEN }}
@@ -52,3 +52,27 @@ jobs:
         run: |
           python -m pip install --upgrade pip uv
           uv publish --token "$UV_PUBLISH_TOKEN"
+      - name: Verify the version is actually on PyPI
+        env:
+          PKG: medxpert-reg-hub
+          TAG: ${{ github.event.release.tag_name }}
+        run: |
+          python - <<'PY'
+          import json, os, sys, time, urllib.request
+          pkg = os.environ["PKG"]
+          want = (os.environ.get("TAG") or "").lstrip("v")
+          op = urllib.request.build_opener()
+          for attempt in range(12):
+              try:
+                  with op.open("https://pypi.org/pypi/%s/json" % pkg, timeout=20) as r:
+                      have = list((json.load(r).get("releases") or {}).keys())
+                  if want and want in have:
+                      print("VERIFIED %s %s on PyPI" % (pkg, want))
+                      sys.exit(0)
+                  print("poll %d: %s not released yet (latest known: %s)" % (attempt + 1, want, have[-3:]))
+              except Exception as e:
+                  print("poll %d error: %s" % (attempt + 1, e))
+              time.sleep(10)
+          print("NOT ON PYPI: %s %s - the publish step reported success but published nothing" % (pkg, want))
+          sys.exit(1)
+          PY
