@@ -48,11 +48,13 @@ jobs:
 
       - name: Publish to PyPI (API token fallback)
         if: steps.oidc.outcome == 'failure' && env.UV_PUBLISH_TOKEN != ''
+        continue-on-error: true
         working-directory: mcp
         run: |
           python -m pip install --upgrade pip uv
           uv publish --token "$UV_PUBLISH_TOKEN"
       - name: Verify the version is actually on PyPI
+        if: always()
         env:
           PKG: medxpert-reg-hub
           MANIFEST: mcp/pyproject.toml
